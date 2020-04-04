@@ -1,9 +1,57 @@
 fileFormatVersion: 2
 guid: 4c975d9e5d4a54f45a8e927ae75b77ed
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1753668754816753492
+    second: newshs.shp.000000_0
+  - first:
+      213: 314618791460945556
+    second: newshs.shp.000000_1
+  - first:
+      213: -7365003764150983542
+    second: newshs.shp.000000_2
+  - first:
+      213: -9043866562386088191
+    second: newshs.shp.000000_3
+  - first:
+      213: -9051910979034278389
+    second: newshs.shp.000000_4
+  - first:
+      213: 8302543036456933512
+    second: newshs.shp.000000_5
+  - first:
+      213: 9208192510033355997
+    second: newshs.shp.000000_6
+  - first:
+      213: 9051925404277997744
+    second: newshs.shp.000000_7
+  - first:
+      213: -6770017015123766332
+    second: newshs.shp.000000_8
+  - first:
+      213: -8303955874840486069
+    second: newshs.shp.000000_9
+  - first:
+      213: -1787276314694068604
+    second: Tank New
+  - first:
+      213: -5996357672879809466
+    second: newshs.shp.000000_11
+  - first:
+      213: 3637994423433905617
+    second: newshs.shp.000000_12
+  - first:
+      213: -991554150188078239
+    second: newshs.shp.000000_13
+  - first:
+      213: -3128350645384268048
+    second: newshs.shp.000000_14
+  - first:
+      213: -3635361696462143436
+    second: newshs.shp.000000_15
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -57,6 +105,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -84,7 +133,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: newshs.shp.000000_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 210
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fdd80f078465810800000000000000
+      internalID: 1753668754816753492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 196
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e31b8bf10cd5400800000000000000
+      internalID: 314618791460945556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 140
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84ad5419104ac990800000000000000
+      internalID: -7365003764150983542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 112
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fa1f8274bbd7280800000000000000
+      internalID: -9043866562386088191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 84
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0614347ce6216280800000000000000
+      internalID: -9051910979034278389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888986427ee883370800000000000000
+      internalID: 8302543036456933512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 85
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd463fffc421acf70800000000000000
+      internalID: 9208192510033355997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 24
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0035f2236ee9d70800000000000000
+      internalID: 9051925404277997744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_8
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 73
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c39232d4611c02a0800000000000000
+      internalID: -6770017015123766332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 61
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f5d99c02c62cc80800000000000000
+      internalID: -8303955874840486069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tank New
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486d03349a15237e0800000000000000
+      internalID: -1787276314694068604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 44
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c9fc17778a8cca0800000000000000
+      internalID: -5996357672879809466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_12
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 30
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d541a737a0cc7230800000000000000
+      internalID: 3637994423433905617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ba97ef0ca4d32f0800000000000000
+      internalID: -991554150188078239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 16
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6b109a9add594d0800000000000000
+      internalID: -3128350645384268048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshs.shp.000000_15
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 2
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430005c4cc99c8dc0800000000000000
+      internalID: -3635361696462143436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

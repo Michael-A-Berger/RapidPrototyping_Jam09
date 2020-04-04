@@ -1,9 +1,30 @@
 fileFormatVersion: 2
 guid: 7f5e99da4ea40ac4a8046a63f68d3eb3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7635828694072897913
+    second: Carrier New
+  - first:
+      213: -6072430135819353759
+    second: newsho.shp.000000_1
+  - first:
+      213: -2157816629763950980
+    second: newsho.shp.000000_2
+  - first:
+      213: -3731601713706955313
+    second: newsho.shp.000000_3
+  - first:
+      213: -590251422468792975
+    second: newsho.shp.000000_4
+  - first:
+      213: -3308301145592764687
+    second: newsho.shp.000000_5
+  - first:
+      213: -2226829991368226792
+    second: newsho.shp.000000_6
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -57,6 +78,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -84,7 +106,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Carrier New
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 92
+        width: 181
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ecc045246180690800000000000000
+      internalID: -7635828694072897913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsho.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 60
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1614c1fe6f46abba0800000000000000
+      internalID: -6072430135819353759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsho.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 60
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c763d743535ed02e0800000000000000
+      internalID: -2157816629763950980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsho.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 60
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd02432300b63cc0800000000000000
+      internalID: -3731601713706955313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsho.shp.000000_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 60
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d149365710fc7f0800000000000000
+      internalID: -590251422468792975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsho.shp.000000_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6eceed2ad8612d0800000000000000
+      internalID: -3308301145592764687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsho.shp.000000_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 6
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8188f4dcbe5b811e0800000000000000
+      internalID: -2226829991368226792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

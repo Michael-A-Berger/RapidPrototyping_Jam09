@@ -1,118 +1,115 @@
 fileFormatVersion: 2
-guid: 0de5391dc5afe6a4caf73bc99cc70762
+guid: 1729ab9283261b8478aab4e8686b9582
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8533687061123669668
-    second: newsha.shp.000000_0
+      213: 52399734383888489
+    second: Inferno New
   - first:
-      213: 2432636583958519348
-    second: newsha.shp.000000_1
+      213: -5101439738888752882
+    second: Unsheathed New
   - first:
-      213: -9030001674737545864
-    second: newsha.shp.000000_2
+      213: -7136452737463025763
+    second: newsh3.shp.000000 modified_2
   - first:
-      213: -3785697065534339742
-    second: newsha.shp.000000_3
+      213: -6604173053686565348
+    second: newsh3.shp.000000 modified_3
   - first:
-      213: -7261743387057622106
-    second: newsha.shp.000000_4
+      213: -155348359203549315
+    second: newsh3.shp.000000 modified_4
   - first:
-      213: -7279004865953381907
-    second: newsha.shp.000000_5
+      213: -3827176418391774675
+    second: newsh3.shp.000000 modified_5
   - first:
-      213: -1879208374291135765
-    second: newsha.shp.000000_6
+      213: 5618326779510754688
+    second: newsh3.shp.000000 modified_6
   - first:
-      213: 7432993660172402051
-    second: newsha.shp.000000_7
+      213: -2315510713045573744
+    second: newsh3.shp.000000 modified_7
   - first:
-      213: -1497382415597511308
-    second: newsha.shp.000000_8
+      213: 7863052414225871459
+    second: newsh3.shp.000000 modified_8
   - first:
-      213: -7564723084673343048
-    second: newsha.shp.000000_9
+      213: 612387474773312363
+    second: newsh3.shp.000000 modified_9
   - first:
-      213: 1633410625989309461
-    second: newsha.shp.000000_10
+      213: 8697499157430316493
+    second: newsh3.shp.000000 modified_10
   - first:
-      213: -8874747982221237317
-    second: newsha.shp.000000_11
+      213: 5724756242271248318
+    second: newsh3.shp.000000 modified_11
   - first:
-      213: 5231647743607174464
-    second: Mine Face
+      213: 2808200382075958165
+    second: newsh3.shp.000000 modified_12
   - first:
-      213: 8292145349223935462
-    second: Woodblock Face
+      213: 1142348324645980174
+    second: newsh3.shp.000000 modified_13
   - first:
-      213: 6059265514912693679
-    second: newsha.shp.000000_14
+      213: -9121460492265094514
+    second: newsh3.shp.000000 modified_14
   - first:
-      213: 3144049496691916011
-    second: newsha.shp.000000_15
+      213: -4202425134755764790
+    second: newsh3.shp.000000 modified_15
   - first:
-      213: -4891911468444471167
-    second: Doom Face
+      213: -7237378064236964130
+    second: newsh3.shp.000000 modified_16
   - first:
-      213: -4534962629662257385
-    second: Submarine New
+      213: -6280114164559342611
+    second: Blood Face
   - first:
-      213: -6926169293242407590
-    second: newsha.shp.000000_18
+      213: -4371613938761607048
+    second: newsh3.shp.000000 modified_18
   - first:
-      213: 958082136095652685
-    second: newsha.shp.000000_19
+      213: -8651651524079698270
+    second: newsh3.shp.000000 modified_19
   - first:
-      213: 3058330155584728219
-    second: newsha.shp.000000_20
+      213: -6876725866176958504
+    second: newsh3.shp.000000 modified_20
   - first:
-      213: 3269061350229549013
-    second: newsha.shp.000000_21
+      213: -4752867077004278931
+    second: newsh3.shp.000000 modified_21
   - first:
-      213: 5365183826186276749
-    second: newsha.shp.000000_22
+      213: 4471081001027032231
+    second: newsh3.shp.000000 modified_22
   - first:
-      213: -8103808184009645817
-    second: newsha.shp.000000_23
+      213: -4345236956125080875
+    second: newsh3.shp.000000 modified_23
   - first:
-      213: -7497918230337870503
-    second: newsha.shp.000000_24
+      213: 5465413868811594690
+    second: newsh3.shp.000000 modified_24
   - first:
-      213: 7200001334468016456
-    second: newsha.shp.000000_25
+      213: 764128031494891119
+    second: newsh3.shp.000000 modified_25
   - first:
-      213: 7479762150350750169
-    second: newsha.shp.000000_26
+      213: -4754479564635424258
+    second: newsh3.shp.000000 modified_26
   - first:
-      213: 2070825672890057339
-    second: newsha.shp.000000_27
+      213: -487654526240958909
+    second: newsh3.shp.000000 modified_27
   - first:
-      213: -5267514587682035781
-    second: newsha.shp.000000_28
+      213: -1888884077341830829
+    second: newsh3.shp.000000 modified_28
   - first:
-      213: -4190402257710325221
-    second: newsha.shp.000000_29
+      213: 4231082163759469158
+    second: newsh3.shp.000000 modified_29
   - first:
-      213: -5161418614814380135
-    second: newsha.shp.000000_30
+      213: 1721355408691354269
+    second: newsh3.shp.000000 modified_30
   - first:
-      213: 4766894134821476626
-    second: newsha.shp.000000_31
+      213: 1423137147199996214
+    second: newsh3.shp.000000 modified_31
   - first:
-      213: 2831066086207066584
-    second: newsha.shp.000000_32
+      213: 2830966487351300352
+    second: newsh3.shp.000000 modified_32
   - first:
-      213: 3390897686658480048
-    second: newsha.shp.000000_33
+      213: -1263259126625235724
+    second: newsh3.shp.000000 modified_33
   - first:
-      213: -6897185889644993788
-    second: newsha.shp.000000_34
+      213: -8318644710079779116
+    second: newsh3.shp.000000 modified_34
   - first:
-      213: 6800737897872364863
-    second: newsha.shp.000000_35
-  - first:
-      213: -4722613222005341431
-    second: newsha.shp.000000_36
+      213: -5497012516585127456
+    second: newsh3.shp.000000 modified_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +139,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -156,7 +153,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,14 +165,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -184,10 +181,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -198,13 +195,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: newsha.shp.000000_0
+      name: Inferno New
       rect:
         serializedVersion: 2
-        x: 13
-        y: 176
-        width: 11
-        height: 39
+        x: 3
+        y: 119
+        width: 79
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae9f9e2b2fbd6670800000000000000
-      internalID: 8533687061123669668
+      spriteID: 968c642e7492ab000800000000000000
+      internalID: 52399734383888489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_1
+      name: Unsheathed New
       rect:
         serializedVersion: 2
-        x: 40
-        y: 176
-        width: 8
-        height: 39
+        x: 84
+        y: 200
+        width: 48
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,146 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43e977e951672c120800000000000000
-      internalID: 2432636583958519348
+      spriteID: e017978069b0439b0800000000000000
+      internalID: -5101439738888752882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_2
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 176
-        width: 5
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87d0610e15dfea280800000000000000
-      internalID: -9030001674737545864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_3
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 174
-        width: 25
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 265469d8390867bc0800000000000000
-      internalID: -3785697065534339742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_4
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 202
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a373642dda193b90800000000000000
-      internalID: -7261743387057622106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_5
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 112
-        width: 92
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de14286e3a7cbfa90800000000000000
-      internalID: -7279004865953381907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_6
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 184
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be20077a0f5bbe5e0800000000000000
-      internalID: -1879208374291135765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_7
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 184
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38d7e4c2a5c472760800000000000000
-      internalID: 7432993660172402051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_8
+      name: newsh3.shp.000000 modified_2
       rect:
         serializedVersion: 2
         x: 134
-        y: 184
-        width: 4
-        height: 6
+        y: 201
+        width: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47dd46160aa383be0800000000000000
-      internalID: -1497382415597511308
+      spriteID: d9ff62bbb0a36fc90800000000000000
+      internalID: -7136452737463025763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_9
+      name: newsh3.shp.000000 modified_3
       rect:
         serializedVersion: 2
-        x: 139
-        y: 184
-        width: 5
-        height: 6
+        x: 162
+        y: 203
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b129d12f64b40790800000000000000
-      internalID: -7564723084673343048
+      spriteID: c163ecb19934954a0800000000000000
+      internalID: -6604173053686565348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_10
+      name: newsh3.shp.000000 modified_4
       rect:
         serializedVersion: 2
-        x: 122
-        y: 175
-        width: 5
-        height: 5
+        x: 183
+        y: 201
+        width: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514f0766f4a0ba610800000000000000
-      internalID: 1633410625989309461
+      spriteID: d7f8b398d7718ddf0800000000000000
+      internalID: -155348359203549315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_11
+      name: newsh3.shp.000000 modified_5
       rect:
         serializedVersion: 2
-        x: 123
-        y: 169
-        width: 10
-        height: 5
+        x: 184
+        y: 140
+        width: 44
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,20 +314,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb3a6980bbf86d480800000000000000
-      internalID: -8874747982221237317
+      spriteID: d2aa101235323eac0800000000000000
+      internalID: -3827176418391774675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mine Face
+      name: newsh3.shp.000000 modified_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 112
-        width: 55
-        height: 55
+        x: 84
+        y: 172
+        width: 68
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,20 +335,188 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 045fda387eb8a9840800000000000000
-      internalID: 5231647743607174464
+      spriteID: 08d8dc4507e48fd40800000000000000
+      internalID: 5618326779510754688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Woodblock Face
+      name: newsh3.shp.000000 modified_7
       rect:
         serializedVersion: 2
-        x: 81
+        x: 156
+        y: 170
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f9e4b4647addfd0800000000000000
+      internalID: -2315510713045573744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 144
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362f530b28c2f1d60800000000000000
+      internalID: 7863052414225871459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 144
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6303cae923af7800800000000000000
+      internalID: 612387474773312363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 143
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcda4e00769b3b870800000000000000
+      internalID: 8697499157430316493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 144
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf1746a87b627f40800000000000000
+      internalID: 5724756242271248318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 116
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593f0c77e5bb8f620800000000000000
+      internalID: 2808200382075958165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e084944bfbf6adf00800000000000000
+      internalID: 1142348324645980174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8287c582001a6180800000000000000
+      internalID: -9121460492265094514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_15
+      rect:
+        serializedVersion: 2
+        x: 134
         y: 115
-        width: 31
-        height: 40
+        width: 21
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,18 +524,207 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed666ee24e931370800000000000000
-      internalID: 8292145349223935462
+      spriteID: ac5a5b7fa9cfda5c0800000000000000
+      internalID: -4202425134755764790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_14
+      name: newsh3.shp.000000 modified_16
       rect:
         serializedVersion: 2
-        x: 124
-        y: 145
+        x: 156
+        y: 113
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed693ffeefaaf8b90800000000000000
+      internalID: -7237378064236964130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Face
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 112
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de39a88d07d88d8a0800000000000000
+      internalID: -6280114164559342611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae33caf6c82fe780800000000000000
+      internalID: -8651651524079698270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 86
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df28c85246f090a0800000000000000
+      internalID: -6876725866176958504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_21
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 56
+        width: 141
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63c282439c6a0eb0800000000000000
+      internalID: -4752867077004278931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 59
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4d63c4b787c0e30800000000000000
+      internalID: 4471081001027032231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_23
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 41
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2d34da20e92b3c0800000000000000
+      internalID: -4345236956125080875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb2209e4fc09db40800000000000000
+      internalID: 5465413868811594690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_25
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 33
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66eb28656aba9a00800000000000000
+      internalID: 764128031494891119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_26
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 34
         width: 17
         height: 17
       alignment: 0
@@ -506,20 +734,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fad3528e1e5d61450800000000000000
-      internalID: 6059265514912693679
+      spriteID: ef93d0ab602b40eb0800000000000000
+      internalID: -4754479564635424258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_15
+      name: newsh3.shp.000000 modified_27
       rect:
         serializedVersion: 2
-        x: 122
-        y: 115
-        width: 21
-        height: 21
+        x: 77
+        y: 36
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,188 +755,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bec319efb58e1ab20800000000000000
-      internalID: 3144049496691916011
+      spriteID: 346db46cac08b39f0800000000000000
+      internalID: -487654526240958909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom Face
+      name: newsh3.shp.000000 modified_28
       rect:
         serializedVersion: 2
-        x: 12
-        y: 56
-        width: 74
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18035ba10707c1cb0800000000000000
-      internalID: -4891911468444471167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Submarine New
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 90
-        width: 36
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71f4f4df3839011c0800000000000000
-      internalID: -4534962629662257385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_18
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 90
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a55611669bd41ef90800000000000000
-      internalID: -6926169293242407590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_19
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 88
-        width: 22
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4bf0ab60aacb4d00800000000000000
-      internalID: 958082136095652685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_20
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 88
-        width: 22
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9c2e71a21f517a20800000000000000
-      internalID: 3058330155584728219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_21
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 62
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5df14615af90e5d20800000000000000
-      internalID: 3269061350229549013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_22
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 62
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8f01829346f47a40800000000000000
-      internalID: 5365183826186276749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_23
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 62
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 701a338746d798f80800000000000000
-      internalID: -8103808184009645817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_24
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 58
+        x: 97
+        y: 2
         width: 23
-        height: 24
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,20 +776,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95529cd581b02f790800000000000000
-      internalID: -7497918230337870503
+      spriteID: 351162c70f559c5e0800000000000000
+      internalID: -1888884077341830829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_25
+      name: newsh3.shp.000000 modified_29
       rect:
         serializedVersion: 2
-        x: 192
-        y: 58
+        x: 121
+        y: 0
+        width: 82
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662df5a8fc2d7ba30800000000000000
+      internalID: 4231082163759469158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_30
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 29
         width: 23
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -737,20 +818,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 849fd43011b8be360800000000000000
-      internalID: 7200001334468016456
+      spriteID: d9ade33cf9b73e710800000000000000
+      internalID: 1721355408691354269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_26
+      name: newsh3.shp.000000 modified_31
       rect:
         serializedVersion: 2
-        x: 1
-        y: 6
-        width: 34
-        height: 44
+        x: 4
+        y: 1
+        width: 18
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -758,20 +839,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d18118db047dc760800000000000000
-      internalID: 7479762150350750169
+      spriteID: 631c48df1bfffb310800000000000000
+      internalID: 1423137147199996214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_27
+      name: newsh3.shp.000000 modified_32
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0011c99650d994720800000000000000
+      internalID: 2830966487351300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh3.shp.000000 modified_33
       rect:
         serializedVersion: 2
         x: 48
-        y: 8
-        width: 8
-        height: 39
+        y: 2
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -779,20 +881,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b720f505afc0dbc10800000000000000
-      internalID: 2070825672890057339
+      spriteID: 4fc8b327480087ee0800000000000000
+      internalID: -1263259126625235724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_28
+      name: newsh3.shp.000000 modified_34
       rect:
         serializedVersion: 2
-        x: 72
-        y: 8
-        width: 5
-        height: 39
+        x: 74
+        y: 2
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -800,20 +902,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb72608146706e6b0800000000000000
-      internalID: -5267514587682035781
+      spriteID: 4de2303d5bc3e8c80800000000000000
+      internalID: -8318644710079779116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsha.shp.000000_29
+      name: newsh3.shp.000000 modified_35
       rect:
         serializedVersion: 2
-        x: 123
-        y: 34
-        width: 18
-        height: 17
+        x: 204
+        y: 0
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -821,155 +923,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b126e2b2953b8d5c0800000000000000
-      internalID: -4190402257710325221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_30
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 34
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99f66eebd15fe58b0800000000000000
-      internalID: -5161418614814380135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_31
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 29
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2195de3a5f8672240800000000000000
-      internalID: 4766894134821476626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_32
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 29
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d117041b97f94720800000000000000
-      internalID: 2831066086207066584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_33
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 6
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b7f8f2fa73ee0f20800000000000000
-      internalID: 3390897686658480048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_34
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 6
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 403afd9e9f54840a0800000000000000
-      internalID: -6897185889644993788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_35
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 6
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3518351613116e50800000000000000
-      internalID: 6800737897872364863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newsha.shp.000000_36
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 6
-        width: 19
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9030fcacb48e57eb0800000000000000
-      internalID: -4722613222005341431
+      spriteID: 0e141179d30b6b3b0800000000000000
+      internalID: -5497012516585127456
       vertices: []
       indices: 
       edges: []

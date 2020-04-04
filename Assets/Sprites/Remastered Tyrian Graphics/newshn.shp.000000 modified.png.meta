@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 7095dc6d4e5bf4e4aaae18a7f0a615cf
+guid: 7d49e2efdf2b4b043abc871ca5f364b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7328890903251302141
-    second: shapesx_0
+      213: 3632849538722145923
+    second: newshn.shp.000000 modified_0
   - first:
-      213: -47385064214018465
-    second: shapesx_1
+      213: -3042455054687459112
+    second: Worm Face
   - first:
-      213: 3506669259920427549
-    second: shapesx_2
-  - first:
-      213: -5657046539039395934
-    second: shapesx_3
-  - first:
-      213: -4886812198160120669
-    second: shapesx_4
-  - first:
-      213: -4924237984581559447
-    second: Talon Face
-  - first:
-      213: -2121991512036633730
-    second: shapesx_6
+      213: 8709675965890576094
+    second: newshn.shp.000000 modified_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -66,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,14 +66,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,10 +82,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,55 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shapesx_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1769
-        width: 141
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df6b2e5427375b560800000000000000
-      internalID: 7328890903251302141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_1
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 1876
-        width: 92
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f564ddff887a75ff0800000000000000
-      internalID: -47385064214018465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_2
+      name: newshn.shp.000000 modified_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1372
-        width: 240
-        height: 503
+        y: 0
+        width: 192
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ac65edc113aa030800000000000000
-      internalID: 3506669259920427549
+      spriteID: 386a9f568697a6230800000000000000
+      internalID: 3632849538722145923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shapesx_3
+      name: Worm Face
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1037
-        width: 77
-        height: 111
+        x: 7
+        y: 73
+        width: 113
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2af24b225222e71b0800000000000000
-      internalID: -5657046539039395934
+      spriteID: 8d823445f3707c5d0800000000000000
+      internalID: -3042455054687459112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shapesx_4
+      name: newshn.shp.000000 modified_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 1037
-        width: 77
-        height: 111
+        x: 133
+        y: 50
+        width: 93
+        height: 174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,50 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4ce9c723e8e2cb0800000000000000
-      internalID: -4886812198160120669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Talon Face
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 532
-        width: 240
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96bd78b84a799abb0800000000000000
-      internalID: -4924237984581559447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 6
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7399ac66fb2d82e0800000000000000
-      internalID: -2121991512036633730
+      spriteID: ede3aa7252cfed870800000000000000
+      internalID: 8709675965890576094
       vertices: []
       indices: 
       edges: []

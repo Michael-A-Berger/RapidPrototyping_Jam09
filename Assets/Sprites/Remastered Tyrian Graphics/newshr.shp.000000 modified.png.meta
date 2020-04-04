@@ -1,28 +1,34 @@
 fileFormatVersion: 2
-guid: 7095dc6d4e5bf4e4aaae18a7f0a615cf
+guid: 63564f3bafb2f4d43af3fc41d29db305
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7328890903251302141
-    second: shapesx_0
+      213: 455834320676881413
+    second: newshr.shp.000000 modified_0
   - first:
-      213: -47385064214018465
-    second: shapesx_1
+      213: -294561085378805683
+    second: Boulder New
   - first:
-      213: 3506669259920427549
-    second: shapesx_2
+      213: -4374184194588065765
+    second: newshr.shp.000000 modified_2
   - first:
-      213: -5657046539039395934
-    second: shapesx_3
+      213: 1315649526381562857
+    second: newshr.shp.000000 modified_3
   - first:
-      213: -4886812198160120669
-    second: shapesx_4
+      213: -8977871368445913052
+    second: newshr.shp.000000 modified_4
   - first:
-      213: -4924237984581559447
-    second: Talon Face
+      213: -5416959652582913079
+    second: newshr.shp.000000 modified_5
   - first:
-      213: -2121991512036633730
-    second: shapesx_6
+      213: 2472889285211473250
+    second: newshr.shp.000000 modified_6
+  - first:
+      213: -583520022897289472
+    second: newshr.shp.000000 modified_7
+  - first:
+      213: -1056549133583011471
+    second: newshr.shp.000000 modified_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -66,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,14 +84,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,10 +100,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,55 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shapesx_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1769
-        width: 141
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df6b2e5427375b560800000000000000
-      internalID: 7328890903251302141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_1
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 1876
-        width: 92
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f564ddff887a75ff0800000000000000
-      internalID: -47385064214018465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_2
+      name: newshr.shp.000000 modified_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1372
-        width: 240
-        height: 503
+        y: 140
+        width: 120
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,83 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ac65edc113aa030800000000000000
-      internalID: 3506669259920427549
+      spriteID: 504806846e2735600800000000000000
+      internalID: 455834320676881413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shapesx_3
+      name: Boulder New
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1037
-        width: 77
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2af24b225222e71b0800000000000000
-      internalID: -5657046539039395934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_4
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 1037
-        width: 77
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a4ce9c723e8e2cb0800000000000000
-      internalID: -4886812198160120669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Talon Face
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 532
-        width: 240
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96bd78b84a799abb0800000000000000
-      internalID: -4924237984581559447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shapesx_6
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 20
         y: 6
-        width: 24
-        height: 22
+        width: 141
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +149,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7399ac66fb2d82e0800000000000000
-      internalID: -2121991512036633730
+      spriteID: d40c755e04289ebf0800000000000000
+      internalID: -294561085378805683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 103
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10437386a6cb43c0800000000000000
+      internalID: -4374184194588065765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 100
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb42ec0640224210800000000000000
+      internalID: 1315649526381562857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 75
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42891a4ae81386380800000000000000
+      internalID: -8977871368445913052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 85
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb0c2175e713d4b0800000000000000
+      internalID: -5416959652582913079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 47
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26546e5f3b7715220800000000000000
+      internalID: 2472889285211473250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 19
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00711eb71abe6e7f0800000000000000
+      internalID: -583520022897289472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshr.shp.000000 modified_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 48
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171b90d29226651f0800000000000000
+      internalID: -1056549133583011471
       vertices: []
       indices: 
       edges: []

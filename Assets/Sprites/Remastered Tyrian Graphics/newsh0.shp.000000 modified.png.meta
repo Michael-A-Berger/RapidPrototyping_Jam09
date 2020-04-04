@@ -1,52 +1,40 @@
 fileFormatVersion: 2
-guid: e6e2ab6123117d841b59af8ea2826f53
+guid: a394cb6eb303bbb4bb85b8c15fa723c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8223855593141315549
-    second: Transport New
+      213: 8929897412235188454
+    second: Bird Face
   - first:
-      213: 7990675224989536587
-    second: Satellite New
+      213: 6812242013858105882
+    second: newsh0.shp.000000 modified_1
   - first:
-      213: 5392309528357229531
-    second: newshl.shp.000000_2
+      213: 8813330228451946409
+    second: newsh0.shp.000000 modified_2
   - first:
-      213: -6856436628229574140
-    second: newshl.shp.000000_3
+      213: 7810491437068086697
+    second: newsh0.shp.000000 modified_3
   - first:
-      213: -8565770185043492554
-    second: newshl.shp.000000_4
+      213: -6512469257403353357
+    second: newsh0.shp.000000 modified_4
   - first:
-      213: -7001228549408869345
-    second: newshl.shp.000000_5
+      213: 4418409669273573243
+    second: newsh0.shp.000000 modified_5
   - first:
-      213: 5190892967828750150
-    second: newshl.shp.000000_6
+      213: -5616087732617585743
+    second: newsh0.shp.000000 modified_6
   - first:
-      213: -2494167527971711250
-    second: Satellite Ruined
+      213: 4809438578369141375
+    second: newsh0.shp.000000 modified_7
   - first:
-      213: 2964142062601223962
-    second: newshl.shp.000000_8
+      213: -951792826277198407
+    second: newsh0.shp.000000 modified_8
   - first:
-      213: -1831896698253393900
-    second: newshl.shp.000000_9
+      213: 2012370364210529726
+    second: newsh0.shp.000000 modified_9
   - first:
-      213: 5065239433465390303
-    second: newshl.shp.000000_10
-  - first:
-      213: -8408623814337416527
-    second: newshl.shp.000000_11
-  - first:
-      213: 7935169577817621666
-    second: newshl.shp.000000_12
-  - first:
-      213: 8019498516689771347
-    second: newshl.shp.000000_13
-  - first:
-      213: 7536923923425687964
-    second: newshl.shp.000000_14
+      213: 6731998323242217449
+    second: newsh0.shp.000000 modified_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -90,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,14 +90,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,10 +106,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,13 +120,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Transport New
+      name: Bird Face
       rect:
         serializedVersion: 2
-        x: 10
-        y: 144
-        width: 29
-        height: 76
+        x: 4
+        y: 110
+        width: 185
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd72c411711012270800000000000000
-      internalID: 8223855593141315549
+      spriteID: 6e855f0426e5deb70800000000000000
+      internalID: 8929897412235188454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Satellite New
+      name: newsh0.shp.000000 modified_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 169
-        width: 68
-        height: 55
+        x: 3
+        y: 89
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b41140dd7c494ee60800000000000000
-      internalID: 7990675224989536587
+      spriteID: a1a0100d402f98e50800000000000000
+      internalID: 6812242013858105882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_2
+      name: newsh0.shp.000000 modified_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 113
-        width: 11
-        height: 26
+        x: 27
+        y: 89
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,19 +176,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd3dfa442f455da40800000000000000
-      internalID: 5392309528357229531
+      spriteID: 9af2713d52d3f4a70800000000000000
+      internalID: 8813330228451946409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_3
+      name: newsh0.shp.000000 modified_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 126
-        width: 11
+        x: 51
+        y: 89
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad6cab8490746c60800000000000000
+      internalID: 7810491437068086697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh0.shp.000000 modified_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 57
+        width: 17
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 402366da63b09d0a0800000000000000
-      internalID: -6856436628229574140
+      spriteID: 3f632d507bf0f95a0800000000000000
+      internalID: -6512469257403353357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_4
+      name: newsh0.shp.000000 modified_5
       rect:
         serializedVersion: 2
-        x: 25
-        y: 127
-        width: 11
-        height: 11
+        x: 4
+        y: 31
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 631c9dc6665402980800000000000000
-      internalID: -8565770185043492554
+      spriteID: b77d3393f28515d30800000000000000
+      internalID: 4418409669273573243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_5
+      name: newsh0.shp.000000 modified_6
       rect:
         serializedVersion: 2
-        x: 37
-        y: 127
-        width: 11
-        height: 11
+        x: 28
+        y: 31
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1439297ab3a6de90800000000000000
-      internalID: -7001228549408869345
+      spriteID: 1bb56e566f5af02b0800000000000000
+      internalID: -5616087732617585743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_6
+      name: newsh0.shp.000000 modified_7
       rect:
         serializedVersion: 2
         x: 52
-        y: 113
-        width: 63
-        height: 51
+        y: 31
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64f7186d6a1c90840800000000000000
-      internalID: 5190892967828750150
+      spriteID: f7a90c0d7ee8eb240800000000000000
+      internalID: 4809438578369141375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Satellite Ruined
+      name: newsh0.shp.000000 modified_8
       rect:
         serializedVersion: 2
-        x: 125
-        y: 113
-        width: 63
-        height: 51
+        x: 88
+        y: 25
+        width: 72
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee69ee419dfe26dd0800000000000000
-      internalID: -2494167527971711250
+      spriteID: 9b58bf1a77d8ac2f0800000000000000
+      internalID: -951792826277198407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_8
+      name: newsh0.shp.000000 modified_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 83
-        width: 33
-        height: 28
+        x: 164
+        y: 29
+        width: 17
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1fb321508fb22920800000000000000
-      internalID: 2964142062601223962
+      spriteID: eb5ca4b2f206deb10800000000000000
+      internalID: 2012370364210529726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newshl.shp.000000_9
+      name: newsh0.shp.000000 modified_10
       rect:
         serializedVersion: 2
-        x: 48
-        y: 91
-        width: 19
-        height: 16
+        x: 188
+        y: 29
+        width: 17
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,113 +344,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4104563a8abc396e0800000000000000
-      internalID: -1831896698253393900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newshl.shp.000000_10
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 90
-        width: 23
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd4610e8d685b4640800000000000000
-      internalID: 5065239433465390303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newshl.shp.000000_11
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 62
-        width: 23
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b2378011319e4b80800000000000000
-      internalID: -8408623814337416527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newshl.shp.000000_12
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 63
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a44e4e40b26f1e60800000000000000
-      internalID: 7935169577817621666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newshl.shp.000000_13
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 56
-        width: 33
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35bd01c696bfa4f60800000000000000
-      internalID: 8019498516689771347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: newshl.shp.000000_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 28
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c997ee24068889860800000000000000
-      internalID: 7536923923425687964
+      spriteID: 9efa06daeccdc6d50800000000000000
+      internalID: 6731998323242217449
       vertices: []
       indices: 
       edges: []
