@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 923cde118f64a6148bbc5175d7253c08
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6012000490839375379
+    second: newsh#.shp.000000_0
+  - first:
+      213: 9060673977490859983
+    second: newsh#.shp.000000_1
+  - first:
+      213: -2330512743922263773
+    second: newsh#.shp.000000_2
+  - first:
+      213: -5226650638782493257
+    second: newsh#.shp.000000_3
+  - first:
+      213: -930013578544864344
+    second: newsh#.shp.000000_4
+  - first:
+      213: -9174065799443881808
+    second: newsh#.shp.000000_5
+  - first:
+      213: 3702506307003784999
+    second: newsh#.shp.000000_6
+  - first:
+      213: -4299858085780536316
+    second: newsh#.shp.000000_7
+  - first:
+      213: -1113319482920664068
+    second: newsh#.shp.000000_8
+  - first:
+      213: -5099738419471821401
+    second: Shuriken New
+  - first:
+      213: 6812196317604422382
+    second: newsh#.shp.000000_10
+  - first:
+      213: 419238796882372601
+    second: newsh#.shp.000000_11
+  - first:
+      213: -1399444324146776123
+    second: Shuriken Ruined
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +123,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: newsh#.shp.000000_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 173
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e74fde79aee6350800000000000000
+      internalID: 6012000490839375379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 172
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7e7fd1afafdbd70800000000000000
+      internalID: 9060673977490859983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 173
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3291ef9c10b58afd0800000000000000
+      internalID: -2330512743922263773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 176
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd0d4e9fe43777b0800000000000000
+      internalID: -5226650638782493257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 117
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a32b86e39de713f0800000000000000
+      internalID: -930013578544864344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 119
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0661ef2cb2fa080800000000000000
+      internalID: -9174065799443881808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 120
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f9a979ed1f16330800000000000000
+      internalID: 3702506307003784999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 123
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404c5744ad5d354c0800000000000000
+      internalID: -4299858085780536316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 73
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf30ef234d1bc80f0800000000000000
+      internalID: -1113319482920664068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuriken New
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 60
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a558f35de61a39b0800000000000000
+      internalID: -5099738419471821401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 61
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee229035578c98e50800000000000000
+      internalID: 6812196317604422382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh#.shp.000000_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f76c3ce67f61d500800000000000000
+      internalID: 419238796882372601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuriken Ruined
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c77b404dcc249ce0800000000000000
+      internalID: -1399444324146776123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

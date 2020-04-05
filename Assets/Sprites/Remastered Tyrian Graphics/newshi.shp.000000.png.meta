@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: dfa2a8e6abd8a724db6e3667b7723f20
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3940217390567593522
+    second: Blimp New
+  - first:
+      213: -8214643979617680641
+    second: newshi.shp.000000_1
+  - first:
+      213: -7477306635753179260
+    second: Blimp Ruined
+  - first:
+      213: -6284830499130984761
+    second: Fighter New
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +96,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Blimp New
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 97
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9e661d8298159c0800000000000000
+      internalID: -3940217390567593522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshi.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 196
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff24696d2d8bffd80800000000000000
+      internalID: -8214643979617680641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blimp Ruined
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 84
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487b2433b354b3890800000000000000
+      internalID: -7477306635753179260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fighter New
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 93
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6b1c1a5fbc7c8a0800000000000000
+      internalID: -6284830499130984761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

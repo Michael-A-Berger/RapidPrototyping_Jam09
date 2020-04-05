@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 7ee9a760a0e5b984fabee521422136d8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5865719706328484640
+    second: Hotrod New
+  - first:
+      213: 7744662737170491734
+    second: newsht.shp.000000_1
+  - first:
+      213: 6831999279800711717
+    second: newsht.shp.000000_2
+  - first:
+      213: 8168883891530805233
+    second: newsht.shp.000000_3
+  - first:
+      213: 5523580292368181365
+    second: newsht.shp.000000_4
+  - first:
+      213: -1339224937593144970
+    second: Hotrod Ruined
+  - first:
+      213: 990981276644997434
+    second: newsht.shp.000000_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +105,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hotrod New
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 170
+        width: 137
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e438484107c89ea0800000000000000
+      internalID: -5865719706328484640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsht.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 142
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659604af9b19a7b60800000000000000
+      internalID: 7744662737170491734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsht.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 142
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52afe32c52320de50800000000000000
+      internalID: 6831999279800711717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsht.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 140
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffaa166e94bd5170800000000000000
+      internalID: 8168883891530805233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsht.shp.000000_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 142
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57824feb203b7ac40800000000000000
+      internalID: 5523580292368181365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hotrod Ruined
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 86
+        width: 137
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6797a68c30e1a6de0800000000000000
+      internalID: -1339224937593144970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsht.shp.000000_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 142
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39fc7d783ca0cd00800000000000000
+      internalID: 990981276644997434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

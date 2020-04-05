@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: c6739bde83a475848a693d5a7406688e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2313735451321003430
+    second: newsh9.shp.000000_0
+  - first:
+      213: 438444714434992028
+    second: newsh9.shp.000000_1
+  - first:
+      213: -8770257310388488243
+    second: newsh9.shp.000000_2
+  - first:
+      213: -1113582465222454200
+    second: newsh9.shp.000000_3
+  - first:
+      213: 1687605104646646721
+    second: Turtle Face
+  - first:
+      213: -4627647559948733331
+    second: newsh9.shp.000000_5
+  - first:
+      213: -5204938869233160087
+    second: newsh9.shp.000000_6
+  - first:
+      213: 3198106247257551221
+    second: newsh9.shp.000000_7
+  - first:
+      213: -3055779492108629191
+    second: newsh9.shp.000000_8
+  - first:
+      213: -86757265067928280
+    second: Cyborg Face
+  - first:
+      213: 4531774925170903570
+    second: newsh9.shp.000000_10
+  - first:
+      213: 6612153947972289281
+    second: Crest Face
+  - first:
+      213: -3833579636485364003
+    second: Tower New
+  - first:
+      213: 681173576875729868
+    second: newsh9.shp.000000_13
+  - first:
+      213: 5149577370182679012
+    second: newsh9.shp.000000_14
+  - first:
+      213: 4062483194095518377
+    second: newsh9.shp.000000_0
+  - first:
+      213: -8150804425823230620
+    second: newsh9.shp.000000_1
+  - first:
+      213: 8702509626733548260
+    second: newsh9.shp.000000_2
+  - first:
+      213: 2307622242807436378
+    second: newsh9.shp.000000_3
+  - first:
+      213: 5522607960383430484
+    second: newsh9.shp.000000_4
+  - first:
+      213: -948150507348428399
+    second: newsh9.shp.000000_5
+  - first:
+      213: -3991082480736382544
+    second: newsh9.shp.000000_6
+  - first:
+      213: 2661373696831305791
+    second: newsh9.shp.000000_7
+  - first:
+      213: -5619082573114983179
+    second: newsh9.shp.000000_8
+  - first:
+      213: 3014312625218519898
+    second: newsh9.shp.000000_9
+  - first:
+      213: 6753534521188553460
+    second: newsh9.shp.000000_10
+  - first:
+      213: 6833844237562502161
+    second: newsh9.shp.000000_11
+  - first:
+      213: -8906766664798103054
+    second: newsh9.shp.000000_12
+  - first:
+      213: 4338813130189562418
+    second: newsh9.shp.000000_13
+  - first:
+      213: -6494152118152619690
+    second: newsh9.shp.000000_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +174,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: newsh9.shp.000000_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 172
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5298cf9dd5f3efd0800000000000000
+      internalID: -2313735451321003430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 169
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c979b81152ba51600800000000000000
+      internalID: 438444714434992028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 169
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc775896179c94680800000000000000
+      internalID: -8770257310388488243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 172
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844df4cd5a2cb80f0800000000000000
+      internalID: -1113582465222454200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turtle Face
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 141
+        width: 71
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb699fb6e39b6710800000000000000
+      internalID: 1687605104646646721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 112
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d647d83001b47cfb0800000000000000
+      internalID: -4627647559948733331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 114
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960fbb5eca754c7b0800000000000000
+      internalID: -5204938869233160087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 114
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5717eb500b4f16c20800000000000000
+      internalID: 3198106247257551221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 112
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b01fcfdb0b795d0800000000000000
+      internalID: -3055779492108629191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg Face
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82511f12ab6cbcef0800000000000000
+      internalID: -86757265067928280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 11
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a85d8b84914ee30800000000000000
+      internalID: 4531774925170903570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crest Face
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 56
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103c515abf613cb50800000000000000
+      internalID: 6612153947972289281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower New
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 48
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd66e1db1a36ccac0800000000000000
+      internalID: -3833579636485364003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 14
+        width: 46
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc36f0852c3047900800000000000000
+      internalID: 681173576875729868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsh9.shp.000000_14
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9f025a559f67740800000000000000
+      internalID: 5149577370182679012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

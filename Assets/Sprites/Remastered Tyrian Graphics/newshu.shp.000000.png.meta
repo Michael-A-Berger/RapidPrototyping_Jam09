@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: fe0b107e4f77e2641b3f5af4c44e45d7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2980335537170299716
+    second: Metropolitan New
+  - first:
+      213: -5721395321439533005
+    second: newshu.shp.000000_1
+  - first:
+      213: 2680170901860293127
+    second: newshu.shp.000000_2
+  - first:
+      213: -3996158375273834210
+    second: newshu.shp.000000_3
+  - first:
+      213: 7254468651810054495
+    second: newshu.shp.000000_4
+  - first:
+      213: 2651350404982650748
+    second: newshu.shp.000000_5
+  - first:
+      213: 2912993981951675391
+    second: Orb New
+  - first:
+      213: -2511274929370600964
+    second: newshu.shp.000000_7
+  - first:
+      213: 6013138202232919680
+    second: newshu.shp.000000_8
+  - first:
+      213: -6202822021848198982
+    second: newshu.shp.000000_9
+  - first:
+      213: -3084430156694276768
+    second: newshu.shp.000000_10
+  - first:
+      213: -7078570326153763336
+    second: newshu.shp.000000_11
+  - first:
+      213: 6726939342737573677
+    second: newshu.shp.000000_12
+  - first:
+      213: 3650410949702309066
+    second: newshu.shp.000000_13
+  - first:
+      213: 6327396066537134223
+    second: newshu.shp.000000_14
+  - first:
+      213: -5995425666844488856
+    second: newshu.shp.000000_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +132,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Metropolitan New
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 168
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4cd739e98b3a6d0800000000000000
+      internalID: -2980335537170299716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 168
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338c306b4458990b0800000000000000
+      internalID: -5721395321439533005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 185
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a98be2c31e13520800000000000000
+      internalID: 2680170901860293127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 171
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19d997512bca88c0800000000000000
+      internalID: -3996158375273834210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 117
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5168519dcc0da460800000000000000
+      internalID: 7254468651810054495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_5
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 157
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c773418552d7bc420800000000000000
+      internalID: 2651350404982650748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb New
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 61
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb8417c7980d6820800000000000000
+      internalID: 2912993981951675391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 61
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9658dc1c8262dd0800000000000000
+      internalID: -2511274929370600964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 61
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0869c610655f27350800000000000000
+      internalID: 6013138202232919680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 61
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab094ce2c362be9a0800000000000000
+      internalID: -6202822021848198982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 61
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0653cbf4d17e135d0800000000000000
+      internalID: -3084430156694276768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ebffcacdd3cd90800000000000000
+      internalID: -7078570326153763336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27097df0b3ea5d50800000000000000
+      internalID: 6726939342737573677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 5
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4d3350b6dd8a230800000000000000
+      internalID: 3650410949702309066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 5
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f885623d23d6fc750800000000000000
+      internalID: 6327396066537134223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshu.shp.000000_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 5
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b89720f18fbcca0800000000000000
+      internalID: -5995425666844488856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

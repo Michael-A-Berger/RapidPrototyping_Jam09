@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: bfeaa169b7ac22c4b92cc7d3fe4cc2d0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3109149194457654195
+    second: Worm Face
+  - first:
+      213: 8575229156471254415
+    second: newshn.shp.000000_1
+  - first:
+      213: 3753184440295370795
+    second: newshn.shp.000000_2
+  - first:
+      213: -2618379352735618860
+    second: newshn.shp.000000_3
+  - first:
+      213: -7675645038051566977
+    second: newshn.shp.000000_4
+  - first:
+      213: 8766647663786548322
+    second: newshn.shp.000000_5
+  - first:
+      213: -6690104945769677566
+    second: newshn.shp.000000_6
+  - first:
+      213: 2719745547976841725
+    second: newshn.shp.000000_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:

@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 7095dc6d4e5bf4e4aaae18a7f0a615cf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7328890903251302141
+    second: shapesx_0
+  - first:
+      213: -47385064214018465
+    second: shapesx_1
+  - first:
+      213: 3506669259920427549
+    second: shapesx_2
+  - first:
+      213: -5657046539039395934
+    second: shapesx_3
+  - first:
+      213: -4886812198160120669
+    second: shapesx_4
+  - first:
+      213: -4924237984581559447
+    second: Talon Face
+  - first:
+      213: -2121991512036633730
+    second: shapesx_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +105,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: shapesx_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1769
+        width: 141
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6b2e5427375b560800000000000000
+      internalID: 7328890903251302141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapesx_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1876
+        width: 92
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f564ddff887a75ff0800000000000000
+      internalID: -47385064214018465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapesx_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1372
+        width: 240
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ac65edc113aa030800000000000000
+      internalID: 3506669259920427549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapesx_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1037
+        width: 77
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af24b225222e71b0800000000000000
+      internalID: -5657046539039395934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapesx_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1037
+        width: 77
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4ce9c723e8e2cb0800000000000000
+      internalID: -4886812198160120669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talon Face
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 240
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bd78b84a799abb0800000000000000
+      internalID: -4924237984581559447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shapesx_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7399ac66fb2d82e0800000000000000
+      internalID: -2121991512036633730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
