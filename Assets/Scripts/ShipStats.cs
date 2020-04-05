@@ -12,7 +12,7 @@ public class ShipStats : MonoBehaviour
     public int interior;
     public int safety;
     public int speed;
-    public enum SizeCategory { Small, Regular, Large }
+    public enum SizeCategory { Small, Regular, Large, Irrelevant } // Irrelevant is used by customers only
     public SizeCategory size;
 
     // Ship modifiers are distinct from customer modifiers
