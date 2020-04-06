@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class GameManager : MonoBehaviour
     public float currentCustomerPatience = 5f;
     public float finalBuyingPrice;
 
+    public Button inter;
+    public Button boa;
+    public Button sna;
+    public Button offer;
  
 
 
