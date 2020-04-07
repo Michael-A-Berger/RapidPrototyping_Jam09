@@ -258,8 +258,6 @@ public class CustomerStats : MonoBehaviour
         float maximumOffer = (appearanceValue * appearanceModifier) + (interiorValue * interiorModifier) + (safetyValue * safetyModifier) + (speedValue * speedModifier)
             * (0.003f * patience + 0.8f) * sizeModifier;
 
-            //ship.value * patience * appearanceModifier * interiorModifier * safetyModifier * speedModifier * sizeModifier * sizeRankNumber;
-
         if (amount <= maximumOffer)
         {
             manager.AddIncome(amount);
@@ -278,8 +276,14 @@ public class CustomerStats : MonoBehaviour
         {
             if (amount >= maximumOffer && amount < maximumOffer * 1.2f)
                 UpdatePatience(-10.0f);
-            else if (amount >= maximumOffer * 1.2f && amount < maximumOffer * 2f)
+            else if (amount >= maximumOffer * 1.2f && amount < maximumOffer * 1.5f)
                 UpdatePatience(-20.0f);
+            else if (amount >= maximumOffer * 1.5f && amount < maximumOffer * 2f)
+                UpdatePatience(-40.0f);
+            else if (amount >= maximumOffer * 2f && amount < maximumOffer * 3f)
+                UpdatePatience(-70.0f);
+            else if (amount >= maximumOffer * 3f)
+                UpdatePatience(-100.0f);
             speechBubble.text = purchaseResponseExpensive[Random.Range(0, purchaseResponseExpensive.Length)];
         }
     }
