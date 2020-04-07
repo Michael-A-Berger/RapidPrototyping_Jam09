@@ -26,6 +26,13 @@ public class CustomerStats : MonoBehaviour
     public int safetyWeight;
     public int speedWeight;
 
+    //The modifier of the 5 stats
+    float appearanceModifier;
+    float interiorModifier;
+    float safetyModifier;
+    float speedModifier;
+    float sizeModifier;
+
     // Ship size preference is given if it falls in the top three, otherwise it is set to Irrelevant
     public int sizeRankNumber;
     public ShipStats.SizeCategory sizePreference;
@@ -52,7 +59,36 @@ public class CustomerStats : MonoBehaviour
         patienceText = GameObject.Find("CustomerPatience").GetComponent<Text>();
         patience = 100.0f;
         patienceText.text = "Customer Patience: " + patience + "%";
+
+        //initialize modifiers
+        appearanceModifier = convertWeightToModifier(appearanceWeight);
+        interiorModifier = convertWeightToModifier(interiorWeight);
+        safetyModifier = convertWeightToModifier(safetyWeight);
+        speedModifier = convertWeightToModifier(speedWeight);
+        sizeModifier = 1f;
     }
+
+    public float convertWeightToModifier(int weight)
+    {
+        switch (weight)
+        {
+            case 1:
+                return 1f;
+            case 2:
+                return 1.1f;
+            case 3:
+                return 1.3f;
+            case 4:
+                return 1.6f;
+            case 5:
+                return 2f;
+            case 6:
+                return 2.5f;
+            default:
+                return 1f;
+        }
+    }
+
 
     public void Interview(int preference)
     {
@@ -80,7 +116,7 @@ public class CustomerStats : MonoBehaviour
             }
         }
 
-        UpdatePatience(-1.0f);
+        UpdatePatience(-10.0f);
     }
 
     public void Boast(int stat)
@@ -89,18 +125,18 @@ public class CustomerStats : MonoBehaviour
 
         // MORE PLACEHOLDER MATH. SHOULD CHANGE BASED ON HOW MUCH THEY LIKE THE STAT
         switch (stat)
-        {
+        {       
             case 1:
-                appearanceWeight += appearanceWeight;
+                appearanceModifier = convertWeightToModifier(appearanceWeight + 1);
                 break;
             case 2:
-                interiorWeight += interiorWeight;
+                interiorModifier = convertWeightToModifier(interiorWeight + 1);
                 break;
             case 3:
-                safetyWeight += safetyWeight;
+                safetyModifier = convertWeightToModifier(safetyWeight + 1);
                 break;
             case 4:
-                speedWeight += speedWeight;
+                speedModifier = convertWeightToModifier(speedWeight + 1);
                 break;
             case 5:
                 sizeRankNumber += sizeRankNumber;
@@ -121,17 +157,108 @@ public class CustomerStats : MonoBehaviour
     public void MakeOffer(float amount, ShipStats ship)
     {
         // THIS IS ALL PLACEHOLDER MATH THAT ALL NEEDS TO BE REPLACED!!!
-        float appearanceModifier = appearanceWeight * ship.appearance;
-        float interiorModifier = interiorWeight * ship.interior;
-        float safetyModifier = safetyWeight * ship.safety;
-        float speedModifier = speedWeight * ship.speed;
-        float sizeModifier = 1.0f;
-        if (sizePreference == ship.size)
-            sizeModifier = 1.5f;
-        else if (sizePreference != ShipStats.SizeCategory.Irrelevant)
-            sizeModifier = 0.5f;
 
-        float maximumOffer = ship.value * patience * appearanceModifier * interiorModifier * safetyModifier * speedModifier * sizeModifier * sizeRankNumber;
+        //size modifier math
+        if (sizePreference != ship.size)
+        {
+            if (ship.size == ShipStats.SizeCategory.Small)
+            {
+                if (sizeRankNumber == 1)
+                {
+                    sizeModifier = 1;
+                }
+                else if (sizeRankNumber == 2)
+                {
+                    sizeModifier = 0.98f;
+                }
+                else if (sizeRankNumber == 3)
+                {
+                    sizeModifier = 0.96f;
+                }
+                else if (sizeRankNumber == 4)
+                {
+                    sizeModifier = 0.93f;
+                }
+                else if (sizeRankNumber == 5)
+                {
+                    sizeModifier = 0.90f;
+                }
+                else if (sizeRankNumber == 6)
+                {
+                    sizeModifier = 0.85f;
+                }
+            }
+            else if (ship.size == ShipStats.SizeCategory.Regular)
+            {
+                if (sizeRankNumber == 1)
+                {
+                    sizeModifier = 1;
+                }
+                else if (sizeRankNumber == 2)
+                {
+                    sizeModifier = 0.95f;
+                }
+                else if (sizeRankNumber == 3)
+                {
+                    sizeModifier = 0.90f;
+                }
+                else if (sizeRankNumber == 4)
+                {
+                    sizeModifier = 0.85f;
+                }
+                else if (sizeRankNumber == 5)
+                {
+                    sizeModifier = 0.80f;
+                }
+                else if (sizeRankNumber == 6)
+                {
+                    sizeModifier = 0.75f;
+                }
+            }
+            else if (ship.size == ShipStats.SizeCategory.Large)
+            {
+                if (sizeRankNumber == 1)
+                {
+                    sizeModifier = 1;
+                }
+                else if (sizeRankNumber == 2)
+                {
+                    sizeModifier = 0.90f;
+                }
+                else if (sizeRankNumber == 3)
+                {
+                    sizeModifier = 0.70f;
+                }
+                else if (sizeRankNumber == 4)
+                {
+                    sizeModifier = 0.40f;
+                }
+                else if (sizeRankNumber == 5)
+                {
+                    sizeModifier = 0.20f;
+                }
+                else if (sizeRankNumber == 6)
+                {
+                    sizeModifier = 0.10f;
+                }
+            }
+
+        }
+            
+       
+
+        //patience f(x)=0.003x+0.8
+        //each stats has a value
+        float appearanceValue, interiorValue, safetyValue, speedValue;
+        appearanceValue = ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+        interiorValue = ship.interior / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+        safetyValue = ship.safety / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+        speedValue = ship.speed / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+
+        float maximumOffer = (appearanceValue * appearanceModifier) + (interiorValue * interiorModifier) + (safetyValue * safetyModifier) + (speedValue * speedModifier)
+            * (0.003f * patience + 0.8f) * sizeModifier;
+
+            //ship.value * patience * appearanceModifier * interiorModifier * safetyModifier * speedModifier * sizeModifier * sizeRankNumber;
 
         if (amount <= maximumOffer)
         {
@@ -147,9 +274,12 @@ public class CustomerStats : MonoBehaviour
                 SpawnNextCustomer();
             }
         }
-        else
+        else 
         {
-            UpdatePatience(-1.0f);
+            if (amount >= maximumOffer && amount < maximumOffer * 1.2f)
+                UpdatePatience(-10.0f);
+            else if (amount >= maximumOffer * 1.2f && amount < maximumOffer * 2f)
+                UpdatePatience(-20.0f);
             speechBubble.text = purchaseResponseExpensive[Random.Range(0, purchaseResponseExpensive.Length)];
         }
     }

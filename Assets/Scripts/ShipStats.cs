@@ -7,7 +7,7 @@ public class ShipStats : MonoBehaviour
     // This would be "name," but that term is reserved
     public string model;
 
-    public float value; // The actual value of the ship
+    public float value; // The actual value of the ship   
     
     // The five stats for determining the selling price
     public int appearance;

@@ -97,7 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Blimp
-  value: 1000
+  value: 2000
+  appearancevalue: 0
+  interiorvalue: 0
+  safetyvalue: 0
+  speedvalue: 0
   appearance: 3
   interior: 4
   safety: 3
@@ -117,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipText: 
+  hovering: 0
 --- !u!65 &2364451913797354590
 BoxCollider:
   m_ObjectHideFlags: 0

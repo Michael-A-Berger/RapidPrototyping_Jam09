@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     public void Snacks()
     {
         currentCustomer.OfferSnacks();
+        GameObject.Find("Snacks").GetComponent<Button>().interactable = false;
     }
 
     void Offer(float amount, ShipStats ship)

@@ -97,7 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Orbital (Used)
-  value: 1000
+  value: 400
+  appearancevalue: 0
+  interiorvalue: 0
+  safetyvalue: 0
+  speedvalue: 0
   appearance: 1
   interior: 3
   safety: 1
@@ -117,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipText: 
+  hovering: 0
 --- !u!65 &6193876846431407412
 BoxCollider:
   m_ObjectHideFlags: 0

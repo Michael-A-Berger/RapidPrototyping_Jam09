@@ -99,5 +99,5 @@ MonoBehaviour:
   safetyWeight: 4
   speedWeight: 1
   sizeRankNumber: 2
-  sizePreference: 3
+  sizePreference: 2
   modifier: 0

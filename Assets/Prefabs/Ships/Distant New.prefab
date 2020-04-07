@@ -97,7 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Distance
-  value: 1000
+  value: 500
+  appearancevalue: 0
+  interiorvalue: 0
+  safetyvalue: 0
+  speedvalue: 0
   appearance: 2
   interior: 2
   safety: 4
@@ -117,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipText: 
+  hovering: 0
 --- !u!65 &5321181293378986527
 BoxCollider:
   m_ObjectHideFlags: 0

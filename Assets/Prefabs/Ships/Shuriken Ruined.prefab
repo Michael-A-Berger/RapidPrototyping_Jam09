@@ -97,7 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Shuriken (Used)
-  value: 1000
+  value: 450
+  appearancevalue: 0
+  interiorvalue: 0
+  safetyvalue: 0
+  speedvalue: 0
   appearance: 4
   interior: 1
   safety: 1
@@ -117,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltipText: 
+  hovering: 0
 --- !u!65 &2633447948632547786
 BoxCollider:
   m_ObjectHideFlags: 0
