@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public Text incomeText;
     private float income;
     private float totalShipValue;
+    private AudioManager audioMng = null;
 
     void Start()
     {
@@ -38,6 +39,9 @@ public class GameManager : MonoBehaviour
         SpawnShips();
         SpawnCustomer();
         BoastPanel.SetActive(false);
+        audioMng = FindObjectOfType<AudioManager>();
+        if (audioMng == null)
+            Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
     }
 
     // Update is called once per frame
@@ -120,12 +124,16 @@ public class GameManager : MonoBehaviour
             Instantiate(customerPrefabs[customerIndex], spawnPoint, Quaternion.identity);
             previousCustomerIndex = customerIndex;
         }
+
+        audioMng.PlayAudio("Customer Arrives");
     }
 
     public void AddIncome(float amount)
     {
         income += amount;
         incomeText.text = "Amount Earned: " + income + " / " + totalShipValue;
+        int randomSound = Random.Range(1, 4);
+        audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }
 
     private void ShowToolTip(string toolTip)

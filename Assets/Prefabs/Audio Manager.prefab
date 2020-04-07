@@ -70,7 +70,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Customer Arrives
     clip: {fileID: 8300000, guid: 35e19218935bd384ca496e33b6cdc27d, type: 3}
-    volume: 1
+    volume: 0.8
     repeating: 0
     startOnSceneLoad: 0
     source: {fileID: 0}

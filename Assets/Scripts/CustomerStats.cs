@@ -45,6 +45,7 @@ public class CustomerStats : MonoBehaviour
     private float patience;
 
     private GameManager manager;
+    private AudioManager audioMng  = null;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +67,10 @@ public class CustomerStats : MonoBehaviour
         safetyModifier = convertWeightToModifier(safetyWeight);
         speedModifier = convertWeightToModifier(speedWeight);
         sizeModifier = 1f;
+
+        audioMng = FindObjectOfType<AudioManager>();
+        if (audioMng == null)
+            Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
     }
 
     public float convertWeightToModifier(int weight)
