@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Button boa;
     public Button sna;
     public Button offer;
+    public GameObject BoastPanel;
 
     public Text incomeText;
     private float income;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         ships = new List<ShipStats>();
         SpawnShips();
         SpawnCustomer();
+        BoastPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,9 +55,16 @@ public class GameManager : MonoBehaviour
             GameObject.Find("Interview").GetComponent<Button>().interactable = false;
     }
 
+    public void ActivateBoastPanel()
+    {
+        BoastPanel.SetActive(true);
+    }
+
     public void Boast(int stat)
     {
         currentCustomer.Boast(stat);
+        BoastPanel.SetActive(false);
+        GameObject.Find("Boast").GetComponent<Button>().interactable = false;
     }
 
     public void Snacks()

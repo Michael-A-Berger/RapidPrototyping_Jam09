@@ -39,7 +39,7 @@ public class CustomerStats : MonoBehaviour
 
     // Customer modifiers are distinct from ship modifiers
     public enum CustomerModifier { None }
-    public CustomerModifier modifier = CustomerModifier.None;
+    public CustomerModifier modifier = CustomerModifier.None;    
 
     private Text patienceText;
     private float patience;
@@ -119,6 +119,7 @@ public class CustomerStats : MonoBehaviour
         UpdatePatience(-10.0f);
     }
 
+   
     public void Boast(int stat)
     {
         speechBubble.text = boastResponse[Random.Range(0, boastResponse.Length)];
@@ -144,7 +145,7 @@ public class CustomerStats : MonoBehaviour
                
         }
 
-        UpdatePatience(-1.0f);
+        UpdatePatience(-10.0f);
     }
 
     public void OfferSnacks()
