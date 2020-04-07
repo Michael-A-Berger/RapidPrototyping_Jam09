@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: 51bab332a381d574698a6bd7961a2781
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9152480798286108484
+    second: newshk.shp.000000_0
+  - first:
+      213: 149137667468621469
+    second: newshk.shp.000000_1
+  - first:
+      213: -1919144299266951138
+    second: newshk.shp.000000_2
+  - first:
+      213: 5891838377741700795
+    second: newshk.shp.000000_3
+  - first:
+      213: 2689101594406653617
+    second: newshk.shp.000000_4
+  - first:
+      213: 2613200066423115265
+    second: newshk.shp.000000_5
+  - first:
+      213: 4288041385459876875
+    second: newshk.shp.000000_6
+  - first:
+      213: 5391337659364736886
+    second: newshk.shp.000000_7
+  - first:
+      213: 6992440610629521347
+    second: newshk.shp.000000_8
+  - first:
+      213: -7943943068010218963
+    second: newshk.shp.000000_9
+  - first:
+      213: 5953505612896800594
+    second: newshk.shp.000000_10
+  - first:
+      213: 1770276282414117702
+    second: newshk.shp.000000_11
+  - first:
+      213: -1794473907908033289
+    second: newshk.shp.000000_12
+  - first:
+      213: 4060566197840203448
+    second: newshk.shp.000000_13
+  - first:
+      213: -2955746967642599443
+    second: newshk.shp.000000_14
+  - first:
+      213: -3345488659078586239
+    second: newshk.shp.000000_15
+  - first:
+      213: 1702025440832806943
+    second: newshk.shp.000000_16
+  - first:
+      213: -5478432536298175173
+    second: newshk.shp.000000_17
+  - first:
+      213: -6968307646832480214
+    second: newshk.shp.000000_18
+  - first:
+      213: 7691054590438149405
+    second: newshk.shp.000000_19
+  - first:
+      213: 5972978625397488611
+    second: newshk.shp.000000_20
+  - first:
+      213: -3035685343221311353
+    second: newshk.shp.000000_21
+  - first:
+      213: 1914300032837783628
+    second: newshk.shp.000000_22
+  - first:
+      213: -2425030617218428016
+    second: newshk.shp.000000_23
+  - first:
+      213: 4075437235491090088
+    second: newshk.shp.000000_24
+  - first:
+      213: 4154803213837179980
+    second: newshk.shp.000000_25
+  - first:
+      213: 5326091622307494
+    second: newshk.shp.000000_26
+  - first:
+      213: 1824179758928876685
+    second: newshk.shp.000000_27
+  - first:
+      213: 4442637376721101957
+    second: newshk.shp.000000_28
+  - first:
+      213: -7946896516851872428
+    second: newshk.shp.000000_29
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +174,637 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: newshk.shp.000000_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 203
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec84235903263545b9c2b0ee62bbcc7
+      internalID: 9152480798286108484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 203
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e4ef2fea3236a4a8388b214a1dc5a7
+      internalID: 149137667468621469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 203
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987b00b701edb4c4aa74fd30e494e7f8
+      internalID: -1919144299266951138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 203
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3736b77e09fe94899eb2cd0c18552e
+      internalID: 5891838377741700795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 203
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f51776130bf5e498f1071f5c2205ce
+      internalID: 2689101594406653617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 203
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92510a7921eae3047bbd55f1be31242e
+      internalID: 2613200066423115265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 145
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7df00075485f64cb3106828d3b3e18
+      internalID: 4288041385459876875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 175
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf158e94e9db573459fb63ab428213ac
+      internalID: 5391337659364736886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 175
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3082e460c9b614498bf0724bf114c27
+      internalID: 6992440610629521347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_9
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 175
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8719f9067a537409ddae3a43a2d371
+      internalID: -7943943068010218963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 175
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae7464deb11e6c498a4f999d8908627
+      internalID: 5953505612896800594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 146
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8995530a87df4ab42832c5a4fd0e3c4f
+      internalID: 1770276282414117702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 143
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9725ad6a61e06341af9668f53bc7922
+      internalID: -1794473907908033289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 146
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd66cdb253157342a90b6c347eb360c
+      internalID: 4060566197840203448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 146
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6688db18543f9704ba5c5daa98e68208
+      internalID: -2955746967642599443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 143
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625e2063645fe8a4b99f603312f4de9c
+      internalID: -3345488659078586239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 146
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b9b1e5b5c1ef144ad4abd32a5d8b41
+      internalID: 1702025440832806943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 117
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846f379b02517c54aa0cd014b1555aa6
+      internalID: -5478432536298175173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 131
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5dabc8f72227a41b9d20ae067a8997
+      internalID: -6968307646832480214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_19
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 131
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaca0257b4c02f6489c7c1ba014c4547
+      internalID: 7691054590438149405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 130
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d3b29f4aff1ac4c9611f18a02fe9a8
+      internalID: 5972978625397488611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 127
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b62b4c407ce2942b7c0d0383b6d34a
+      internalID: -3035685343221311353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 72
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4ff621e3186864c8cb5717ba42526f
+      internalID: 1914300032837783628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 96
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca81a6c57f2785d4595fcc427604cf29
+      internalID: -2425030617218428016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_24
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 29
+        width: 35
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58366de16e72d34dbff5f3650f1c874
+      internalID: 4075437235491090088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_25
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 29
+        width: 34
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb84d0bf42fd074cb9fdae130e01db9
+      internalID: 4154803213837179980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_26
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 98
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6630db139250b1c488bfc4af40830959
+      internalID: 5326091622307494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 61
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd51ae901c7590a43b8d37e37eac63e1
+      internalID: 1824179758928876685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_28
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaef409c653c8994686737b756b02e83
+      internalID: 4442637376721101957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newshk.shp.000000_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0995e46ed836df546b80958c4e0d2ad4
+      internalID: -7946896516851872428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

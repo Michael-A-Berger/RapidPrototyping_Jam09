@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4962576969941293615}
   - component: {fileID: 4962576969941293614}
   - component: {fileID: 4962576969941293613}
+  - component: {fileID: 7644324402941067848}
+  - component: {fileID: 6193876846431407412}
   m_Layer: 0
   m_Name: Orbital Ruined
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4962576969941293612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.98, y: -2.1658819, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,7 +48,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -96,9 +97,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Orbital (Used)
+  value: 1000
   appearance: 1
   interior: 3
   safety: 1
   speed: 2
   size: 0
   modifier: 0
+--- !u!114 &7644324402941067848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962576969941293612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: 
+--- !u!65 &6193876846431407412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962576969941293612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.984375, y: 0.796875, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

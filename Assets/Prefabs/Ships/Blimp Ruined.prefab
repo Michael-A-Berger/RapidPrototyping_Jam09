@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1565991714462447371}
   - component: {fileID: 1565991714462447380}
   - component: {fileID: 1565991714462447381}
+  - component: {fileID: 1669662638379612254}
+  - component: {fileID: -4784261611455161900}
   m_Layer: 0
   m_Name: Blimp Ruined
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1565991714462447382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.18, y: -3.62, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,7 +48,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -96,9 +97,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Blimp
+  value: 1000
   appearance: 1
   interior: 4
   safety: 2
   speed: 1
   size: 2
   modifier: 0
+--- !u!114 &1669662638379612254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565991714462447382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: 
+--- !u!65 &-4784261611455161900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565991714462447382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.484375, y: 2.03125, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
