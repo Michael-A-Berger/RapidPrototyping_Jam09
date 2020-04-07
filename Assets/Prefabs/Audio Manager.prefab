@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8392268167236307183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8392268167236307182}
+  - component: {fileID: 8392268167236307177}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8392268167236307182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392268167236307183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8392268167236307177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392268167236307183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088d9a1cb0bfb8f40b4051e1496ac3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources:
+  - name: Music
+    clip: {fileID: 8300000, guid: d42002b7cfdaf924aa5a0a5cd8df5cbb, type: 3}
+    volume: 0.4
+    repeating: 1
+    startOnSceneLoad: 1
+    source: {fileID: 0}
+  - name: Spaceship Sold 1
+    clip: {fileID: 8300000, guid: 94fca6f27f2a74c4c8c97ddd0c957498, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Spaceship Sold 2
+    clip: {fileID: 8300000, guid: 07d0ac7947432f34abd4626afbd8c87d, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Spaceship Sold 3
+    clip: {fileID: 8300000, guid: f8552aa3eabf71d43aacce14e2c5e991, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Customer Arrives
+    clip: {fileID: 8300000, guid: 35e19218935bd384ca496e33b6cdc27d, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Customer Leaves
+    clip: {fileID: 8300000, guid: a343f033e501e214fb0d29e1430838de, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Menu
+    clip: {fileID: 8300000, guid: a43fbfc8d520c0c4b943ba8e638d5ad5, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Changing Sell Price 1
+    clip: {fileID: 8300000, guid: 4cf9d83e067d9a74d8a9da9a057a5dec, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
+  - name: Changing Sell Price 2
+    clip: {fileID: 8300000, guid: 736dc758d412548409a724cdc8dfb1a5, type: 3}
+    volume: 1
+    repeating: 0
+    startOnSceneLoad: 0
+    source: {fileID: 0}
