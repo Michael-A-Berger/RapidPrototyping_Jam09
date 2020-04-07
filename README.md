@@ -13,6 +13,26 @@ You get five actions per customer.  You can interview customers to get their top
 
 It's up to you to make enough cash to cover your investment.  Ships don't just fall out of the sky, you know.
 
+# CREDITS
+
+## Developers
+
+- Robert MacLeod
+- Rongyi Zhao
+- Yuanchao Liu
+- Richard Hetley
+- Michael Berger
+
+## Visuals
+
+- _Remastered Tyrian Graphics_ by Daniel Cook
+    - Link: https://lostgarden.home.blog/2007/04/05/free-game-graphics-tyrian-ships-and-tiles/
+
+## Audio
+
+
+- Master Document of Audio Sources: https://docs.google.com/document/d/1LZfTJjoZz8YUi9bVAEiWjsTxvr3IlHADiuOPsxVak2k/
+
 # IMPORTANT DEV STEPS
 
 1. Download Unity 2019.2.16f1 (see; https://unity3d.com/get-unity/download/archive )
