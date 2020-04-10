@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7238976417252691463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.104535, y: 1.9878664, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,7 +46,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -100,5 +99,5 @@ MonoBehaviour:
   safetyWeight: 5
   speedWeight: 4
   sizeRankNumber: 1
-  sizePreference: 3
+  sizePreference: 1
   modifier: 0

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8383252593327488238}
   - component: {fileID: 8383252593327488239}
   - component: {fileID: 8383252593327488232}
+  - component: {fileID: 797013559549747748}
+  - component: {fileID: 1537966428130529559}
   m_Layer: 0
   m_Name: Imperial New
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8383252593327488233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.06, y: 3.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,7 +48,6 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -96,9 +97,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: Imperial
+  value: 2000
+  appearancevalue: 0
+  interiorvalue: 0
+  safetyvalue: 0
+  speedvalue: 0
   appearance: 5
   interior: 3
   safety: 4
   speed: 1
   size: 2
   modifier: 0
+--- !u!114 &797013559549747748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383252593327488233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: 
+  hovering: 0
+--- !u!65 &1537966428130529559
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8383252593327488233}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 3.4375, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
