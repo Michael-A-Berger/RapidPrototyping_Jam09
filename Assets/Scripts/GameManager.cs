@@ -125,7 +125,7 @@ public class GameManager : MonoBehaviour
             previousCustomerIndex = customerIndex;
         }
 
-        audioMng.PlayAudio("Customer Arrives");
+        //audioMng.PlayAudio("Customer Arrives");
     }
 
     public void AddIncome(float amount)
@@ -133,11 +133,13 @@ public class GameManager : MonoBehaviour
         income += amount;
         incomeText.text = "Amount Earned: " + income + " / " + totalShipValue;
         int randomSound = Random.Range(1, 4);
-        audioMng.PlayAudio("Spaceship Sold " + randomSound);
+        //audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }
 
     private void ShowToolTip(string toolTip)
     {
 
     }
+
+
 }

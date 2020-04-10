@@ -270,12 +270,12 @@ public class CustomerStats : MonoBehaviour
             if (amount / maximumOffer < 0.85f)
             {
                 speechBubble.text = purchaseResponseCheap[Random.Range(0, purchaseResponseCheap.Length)];
-                SpawnNextCustomer();
+                StartCoroutine("SpawnNextCustomer");
             }
             else
             {
                 speechBubble.text = purchaseResponseAverage[Random.Range(0, purchaseResponseAverage.Length)];
-                SpawnNextCustomer();
+                StartCoroutine("SpawnNextCustomer");
             }
         }
         else 
@@ -300,6 +300,8 @@ public class CustomerStats : MonoBehaviour
         patience += amount;
         patience = Mathf.Clamp(patience, 0.0f, 100.0f);
         patienceText.text = "Customer Patience: " + patience + "%";
+        if (patience == 0)
+            StartCoroutine("SpawnNextCustomer");
     }
 
     private IEnumerator SpawnNextCustomer()
