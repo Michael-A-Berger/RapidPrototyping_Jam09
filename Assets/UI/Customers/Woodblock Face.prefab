@@ -51,11 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfef8bb53d7ab72409fef02a735be780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appearanceWeight: 5
-  interiorWeight: 3
-  safetyWeight: 4
-  speedWeight: 2
-  sizeRankNumber: 1
+  appearanceRank: 5
+  interiorRank: 3
+  safetyRank: 4
+  speedRank: 2
+  sizeRank: 1
   sizePreference: 1
   modifier: 0
 --- !u!222 &7838215144815728732
