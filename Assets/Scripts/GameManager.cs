@@ -107,7 +107,7 @@ public class GameManager : MonoBehaviour
             exclude.Add(shipIndex);
 
             spawnedShip.transform.localScale = new Vector3(spawnedShip.transform.localScale.x * 45f, spawnedShip.transform.localScale.y * 45f, 1f);
-            spawnedShip.transform.parent = mainCanvas;
+            spawnedShip.transform.SetParent(mainCanvas);
 
             totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
         }
@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
             int randomIndex = Random.Range(0, customerPrefabs.Length);
             GameObject spawnedCustomer = Instantiate(customerPrefabs[randomIndex], spawnPoint, Quaternion.identity);
             spawnedCustomer.transform.localScale = new Vector3(spawnedCustomer.transform.localScale.x * 45f, spawnedCustomer.transform.localScale.y * 45f, 1f);
-            spawnedCustomer.transform.parent = mainCanvas;
+            spawnedCustomer.transform.SetParent(mainCanvas);
         }
         else
         {
@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
 
             GameObject spawnedCustomer = Instantiate(customerPrefabs[customerIndex], spawnPoint, Quaternion.identity);
             spawnedCustomer.transform.localScale = new Vector3(spawnedCustomer.transform.localScale.x * 45f, spawnedCustomer.transform.localScale.y * 45f, 1f);
-            spawnedCustomer.transform.parent = mainCanvas;
+            spawnedCustomer.transform.SetParent(mainCanvas);
             previousCustomerIndex = customerIndex;
         }
 
