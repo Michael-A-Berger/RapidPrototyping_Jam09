@@ -58,6 +58,13 @@ public class CustomerStats : MonoBehaviour
     private GameManager manager;
     private AudioManager audioMng  = null;
 
+    private Text speechBubble;
+    private float appearanceModifier;
+    private float interiorModifier;
+    private float safetyModifier;
+    private float speedModifier;
+    private float sizeModifier;
+
     // Start is called before the first frame update
     void Start()
     {
