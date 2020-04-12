@@ -5,37 +5,38 @@ using UnityEngine.UI;
 
 public class CustomerStats : MonoBehaviour
 {
-    // Customer syntax
+    // Customer speech content
+    private Text speechBubble;
 
     // Start of conversation
     private string[] greetings = { "Hi there!", "Whatta ya got?", "What're ya sellin'?", "Is this the right place?", "Can I get some service, please?" };
-    // Responce after player use boast
+    // Response after player use boast
     private string[] boastResponse = { "You don't say!", "I hadn't considered that...", "I'll take your word for it.", "Impressive!", "Wow!" };
-    // Responce after player give snack
+    // Response after player give snack
     private string[] snackResponse = { "Thank you!", "Thanks!", "For me? Thanks!", "Talk about customer service!", "You have my attention" };
-    // Interview responce for value appearance
+    // Interview response for value appearance
     private string[] appearanceResponse = { "I guess it would have to be the looks?", "Style is everything!", "I want something that looks cool", "Something that'll turn heads", "One that looks as good as I do" };
-    // Interview responce for value interior
+    // Interview response for value interior
     private string[] interiorResponse = { "Something that looks good from the inside", "A luxury interior!", "Comfortable seats for long trips", "CUP HOLDERS", "Lots of flashing buttons!" };
-    // Interview responce for value safety
+    // Interview response for value safety
     private string[] safteyResponse = { "Something that'll keep my family safe", "Got anything that can blow up a small planet?", "Guns. Lots of them. Don't ask.", "State of the art defense system", "Airbags. Wait, do you need airbags in space?" };
-    // Interview responce for value speed
+    // Interview response for value speed
     private string[] speedResponse = { "GOTTA GO FAST", "The fastest ya got", "Speed is key!", "I want to break some speed records", "Something quick would be nice" };
-    // Interview responce for want smaller ship
+    // Interview response for want smaller ship
     private string[] sizeResponseSmall = { "Something that doesn't take up too much space", "The smaller the better", "I don't need anything too big", "A smaller one will do", "Itsy bitsy teeny weeny spacey shipy" };
-    // Interview responce for want regular ship
+    // Interview response for want regular ship
     private string[] sizeResponseRegular = { "Something not too big or too small", "Something sized juuuuuust right", "Average sized would be fine", "Got anything regular sized?", "I'm not looking for anything crazy for size" };
-    // Interview responce for want large ship
+    // Interview response for want large ship
     private string[] sizeResponseLarge = { "Biggest ya got!", "I need something to fit the whole family", "BIG SHIP PLEASE", "I would prefer something on the large side", "Something big enough to fit an asteroid. No reason." };
-    // Responce when price offered too cheap
+    // Response when price offered too cheap
     private string[] purchaseResponseCheap = { "You're practically giving it away!", "What a steal!", "How do you stay in business with such low prices?!", "Haha, sucker!", "Way less than I was expecting!" };
-    // Responce when price offered just about right
+    // Response when price offered just about right
     private string[] purchaseResponseAverage = { "You got yourself a deal", "Sounds reasonable", "Sure, sounds fair", "A fair price", "I can do that" };
-    // Responce when price offered too high
+    // Response when price offered too high
     private string[] purchaseResponseExpensive = { "I can't afford that", "No way, pal", "That's way too expensive", "For that hunk of junk?! No way!", "You're out of your mind!" };
 
     // Customer's rank of the most important thing to them
-    // each stat is given a rank from 1 to 5 where 5 being the most important and 1 being the least important
+    // Each stat is given a rank from 1 to 5 where 5 being the most important and 1 being the least important
     // For example，if appearance = 5, interior = 4, safety = 3, speed = 2 and size = 1, customer value apearance > interior > safety > speed > size
     public int appearanceRank;
     public int interiorRank;
@@ -45,6 +46,13 @@ public class CustomerStats : MonoBehaviour
 
     // Customer preference for ship size, there are 3 kinds: small, regular and large
     public ShipStats.SizeCategory sizePreference;
+
+    // Modifiers of the 5 stats used in value calculations
+    float appearanceModifier;
+    float interiorModifier;
+    float safetyModifier;
+    float speedModifier;
+    float sizeModifier;
 
     // Saved for adding customer character system
     public enum CustomerModifier { None }
@@ -57,13 +65,6 @@ public class CustomerStats : MonoBehaviour
 
     private GameManager manager;
     private AudioManager audioMng  = null;
-
-    private Text speechBubble;
-    private float appearanceModifier;
-    private float interiorModifier;
-    private float safetyModifier;
-    private float speedModifier;
-    private float sizeModifier;
 
     // Start is called before the first frame update
     void Start()
