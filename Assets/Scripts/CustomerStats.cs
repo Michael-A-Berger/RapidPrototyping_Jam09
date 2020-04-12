@@ -139,12 +139,6 @@ public class CustomerStats : MonoBehaviour
                     break;
             }
         }
-        else
-        {
-            speechBubble.text = "";
-        }
-
-        Debug.Log(speechBubble.text);
 
         UpdatePatience(-10.0f);
     }
