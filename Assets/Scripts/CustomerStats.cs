@@ -5,43 +5,54 @@ using UnityEngine.UI;
 
 public class CustomerStats : MonoBehaviour
 {
-    private Text speechBubble;
+    // Customer syntax
+
+    // Start of conversation
     private string[] greetings = { "Hi there!", "Whatta ya got?", "What're ya sellin'?", "Is this the right place?", "Can I get some service, please?" };
+    // Responce after player use boast
     private string[] boastResponse = { "You don't say!", "I hadn't considered that...", "I'll take your word for it.", "Impressive!", "Wow!" };
+    // Responce after player give snack
     private string[] snackResponse = { "Thank you!", "Thanks!", "For me? Thanks!", "Talk about customer service!", "You have my attention" };
+    // Interview responce for value appearance
     private string[] appearanceResponse = { "I guess it would have to be the looks?", "Style is everything!", "I want something that looks cool", "Something that'll turn heads", "One that looks as good as I do" };
+    // Interview responce for value interior
     private string[] interiorResponse = { "Something that looks good from the inside", "A luxury interior!", "Comfortable seats for long trips", "CUP HOLDERS", "Lots of flashing buttons!" };
+    // Interview responce for value safety
     private string[] safteyResponse = { "Something that'll keep my family safe", "Got anything that can blow up a small planet?", "Guns. Lots of them. Don't ask.", "State of the art defense system", "Airbags. Wait, do you need airbags in space?" };
+    // Interview responce for value speed
     private string[] speedResponse = { "GOTTA GO FAST", "The fastest ya got", "Speed is key!", "I want to break some speed records", "Something quick would be nice" };
+    // Interview responce for want smaller ship
     private string[] sizeResponseSmall = { "Something that doesn't take up too much space", "The smaller the better", "I don't need anything too big", "A smaller one will do", "Itsy bitsy teeny weeny spacey shipy" };
-    private string[] sizeResponseRegular = { "Something not too big or too small", "Something sized juuuuuust right", "Average sized would be fine", "Got anything regular sized?", "I'm not looking for anything crazy for size"};
+    // Interview responce for want regular ship
+    private string[] sizeResponseRegular = { "Something not too big or too small", "Something sized juuuuuust right", "Average sized would be fine", "Got anything regular sized?", "I'm not looking for anything crazy for size" };
+    // Interview responce for want large ship
     private string[] sizeResponseLarge = { "Biggest ya got!", "I need something to fit the whole family", "BIG SHIP PLEASE", "I would prefer something on the large side", "Something big enough to fit an asteroid. No reason." };
+    // Responce when price offered too cheap
     private string[] purchaseResponseCheap = { "You're practically giving it away!", "What a steal!", "How do you stay in business with such low prices?!", "Haha, sucker!", "Way less than I was expecting!" };
+    // Responce when price offered just about right
     private string[] purchaseResponseAverage = { "You got yourself a deal", "Sounds reasonable", "Sure, sounds fair", "A fair price", "I can do that" };
+    // Responce when price offered too high
     private string[] purchaseResponseExpensive = { "I can't afford that", "No way, pal", "That's way too expensive", "For that hunk of junk?! No way!", "You're out of your mind!" };
 
-    // Prioritized ship stats are weighted the highest at 5, lowest at 1
-    public int appearanceWeight;
-    public int interiorWeight;
-    public int safetyWeight;
-    public int speedWeight;
+    // Customer's rank of the most important thing to them
+    // each stat is given a rank from 1 to 5 where 5 being the most important and 1 being the least important
+    // For example，if appearance = 5, interior = 4, safety = 3, speed = 2 and size = 1, customer value apearance > interior > safety > speed > size
+    public int appearanceRank;
+    public int interiorRank;
+    public int safetyRank;
+    public int speedRank;
+    public int sizeRank;
 
-    //The modifier of the 5 stats
-    float appearanceModifier;
-    float interiorModifier;
-    float safetyModifier;
-    float speedModifier;
-    float sizeModifier;
-
-    // Ship size preference is given if it falls in the top three, otherwise it is set to Irrelevant
-    public int sizeRankNumber;
+    // Customer preference for ship size, there are 3 kinds: small, regular and large
     public ShipStats.SizeCategory sizePreference;
 
-    // Customer modifiers are distinct from ship modifiers
+    // Saved for adding customer character system
     public enum CustomerModifier { None }
-    public CustomerModifier modifier = CustomerModifier.None;    
+    public CustomerModifier modifier =  CustomerModifier.None;    
 
-    private Text patienceText;
+    // UI used to display amount of customer patient
+    private Text patienceText; 
+    // Current value for customer patience, an int between 0 and 100, indicate percent of patient left, start value is 100 for all customer
     private float patience;
 
     private GameManager manager;
@@ -62,10 +73,10 @@ public class CustomerStats : MonoBehaviour
         patienceText.text = "Customer Patience: " + patience + "%";
 
         //initialize modifiers
-        appearanceModifier = convertWeightToModifier(appearanceWeight);
-        interiorModifier = convertWeightToModifier(interiorWeight);
-        safetyModifier = convertWeightToModifier(safetyWeight);
-        speedModifier = convertWeightToModifier(speedWeight);
+        appearanceModifier = convertWeightToModifier(appearanceRank);
+        interiorModifier = convertWeightToModifier(interiorRank);
+        safetyModifier = convertWeightToModifier(safetyRank);
+        speedModifier = convertWeightToModifier(speedRank);
         sizeModifier = 1f;
 
         audioMng = FindObjectOfType<AudioManager>();
@@ -97,15 +108,15 @@ public class CustomerStats : MonoBehaviour
 
     public void Interview(int preference)
     {
-        if (appearanceWeight == preference)
+        if (appearanceRank == preference)
             speechBubble.text = appearanceResponse[Random.Range(0, appearanceResponse.Length)];
-        else if (interiorWeight == preference)
+        else if (interiorRank == preference)
             speechBubble.text = interiorResponse[Random.Range(0, interiorResponse.Length)];
-        else if (safetyWeight == preference)
+        else if (safetyRank == preference)
             speechBubble.text = safteyResponse[Random.Range(0, safteyResponse.Length)];
-        else if (speedWeight == preference)
+        else if (speedRank == preference)
             speechBubble.text = speedResponse[Random.Range(0, speedResponse.Length)];
-        else if (sizeRankNumber == preference)
+        else if (sizeRank == preference)
         {
             switch (sizePreference)
             {
@@ -133,19 +144,19 @@ public class CustomerStats : MonoBehaviour
         switch (stat)
         {       
             case 1:
-                appearanceModifier = convertWeightToModifier(appearanceWeight + 1);
+                appearanceModifier = convertWeightToModifier(appearanceRank + 1);
                 break;
             case 2:
-                interiorModifier = convertWeightToModifier(interiorWeight + 1);
+                interiorModifier = convertWeightToModifier(interiorRank + 1);
                 break;
             case 3:
-                safetyModifier = convertWeightToModifier(safetyWeight + 1);
+                safetyModifier = convertWeightToModifier(safetyRank + 1);
                 break;
             case 4:
-                speedModifier = convertWeightToModifier(speedWeight + 1);
+                speedModifier = convertWeightToModifier(speedRank + 1);
                 break;
             case 5:
-                sizeRankNumber += sizeRankNumber;
+                sizeRank += sizeRank;
                 break;
                
         }
@@ -169,81 +180,81 @@ public class CustomerStats : MonoBehaviour
         {
             if (ship.size == ShipStats.SizeCategory.Small)
             {
-                if (sizeRankNumber == 1)
+                if (sizeRank == 1)
                 {
                     sizeModifier = 1;
                 }
-                else if (sizeRankNumber == 2)
+                else if (sizeRank == 2)
                 {
                     sizeModifier = 0.98f;
                 }
-                else if (sizeRankNumber == 3)
+                else if (sizeRank == 3)
                 {
                     sizeModifier = 0.96f;
                 }
-                else if (sizeRankNumber == 4)
+                else if (sizeRank == 4)
                 {
                     sizeModifier = 0.93f;
                 }
-                else if (sizeRankNumber == 5)
+                else if (sizeRank == 5)
                 {
                     sizeModifier = 0.90f;
                 }
-                else if (sizeRankNumber == 6)
+                else if (sizeRank == 6)
                 {
                     sizeModifier = 0.85f;
                 }
             }
             else if (ship.size == ShipStats.SizeCategory.Regular)
             {
-                if (sizeRankNumber == 1)
+                if (sizeRank == 1)
                 {
                     sizeModifier = 1;
                 }
-                else if (sizeRankNumber == 2)
+                else if (sizeRank == 2)
                 {
                     sizeModifier = 0.95f;
                 }
-                else if (sizeRankNumber == 3)
+                else if (sizeRank == 3)
                 {
                     sizeModifier = 0.90f;
                 }
-                else if (sizeRankNumber == 4)
+                else if (sizeRank == 4)
                 {
                     sizeModifier = 0.85f;
                 }
-                else if (sizeRankNumber == 5)
+                else if (sizeRank == 5)
                 {
                     sizeModifier = 0.80f;
                 }
-                else if (sizeRankNumber == 6)
+                else if (sizeRank == 6)
                 {
                     sizeModifier = 0.75f;
                 }
             }
             else if (ship.size == ShipStats.SizeCategory.Large)
             {
-                if (sizeRankNumber == 1)
+                if (sizeRank == 1)
                 {
                     sizeModifier = 1;
                 }
-                else if (sizeRankNumber == 2)
+                else if (sizeRank == 2)
                 {
                     sizeModifier = 0.90f;
                 }
-                else if (sizeRankNumber == 3)
+                else if (sizeRank == 3)
                 {
                     sizeModifier = 0.70f;
                 }
-                else if (sizeRankNumber == 4)
+                else if (sizeRank == 4)
                 {
                     sizeModifier = 0.40f;
                 }
-                else if (sizeRankNumber == 5)
+                else if (sizeRank == 5)
                 {
                     sizeModifier = 0.20f;
                 }
-                else if (sizeRankNumber == 6)
+                else if (sizeRank == 6)
                 {
                     sizeModifier = 0.10f;
                 }
