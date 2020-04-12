@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     // currentInterviewRank represent current 
     private int currentInterviewRank;
 
+    private StatsPannelController statsPannelController;
+
     public static GameManager instance;
 
     public ShipStats currentShip;
@@ -37,19 +39,38 @@ public class GameManager : MonoBehaviour
     private float totalShipValue;
     private AudioManager audioMng = null;
 
+    public int currentSelectedShipIndex = -1;
+
+    void Awake()
+    {
+        if (instance != null)
+            Destroy(instance);
+        instance = this;
+    }
+
+    void OnDestroy()
+    {
+        if (instance == this)
+        {
+            instance = null;
+        }
+    }
+
     void Start()
     {
         income = 0.0f;
         totalShipValue = 0.0f;
         incomeText = GameObject.Find("CurentIncome").GetComponent<Text>();
         totalIncomeText = GameObject.Find("TotalIncome").GetComponent<Text>();
+        statsPannelController = FindObjectOfType<StatsPannelController>();
         ships = new List<ShipStats>();
-        SpawnShips();
-        SpawnCustomer();
-        BoastPanel.SetActive(false);
         audioMng = FindObjectOfType<AudioManager>();
         if (audioMng == null)
             Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
+
+        SpawnShips();
+        SpawnCustomer();
+        BoastPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -148,7 +169,7 @@ public class GameManager : MonoBehaviour
         GameObject.Find("Snacks").GetComponent<Button>().interactable = true;
         GameObject.Find("Offer").GetComponent<Button>().interactable = true;
 
-        //audioMng.PlayAudio("Customer Arrives");
+        audioMng.PlayAudio("Customer Arrives");
     }
 
     public void AddIncome(float amount)
@@ -156,7 +177,7 @@ public class GameManager : MonoBehaviour
         income += amount;
         incomeText.text = income.ToString();
         int randomSound = Random.Range(1, 4);
-        //audioMng.PlayAudio("Spaceship Sold " + randomSound);
+        audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }
 
     private void ShowToolTip(string toolTip)
@@ -164,5 +185,8 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    public void UpdateStatsPannel(string model, string size, int appearanceVal, int interiorVal, int saftyVal, int speedVal, int shipPrice)
+    {
+        statsPannelController.UpdateStats(model, size, appearanceVal, interiorVal, saftyVal, speedVal, shipPrice);
+    }
 }
