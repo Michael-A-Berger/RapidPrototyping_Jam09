@@ -7,7 +7,7 @@ public class StatsPannelController : MonoBehaviour
 {
     private StarController appearanceStars;
     private StarController interiorStars;
-    private StarController saftyStars;
+    private StarController safetyStars;
     private StarController speedStars;
 
     private Text modelTextBox;
@@ -19,7 +19,7 @@ public class StatsPannelController : MonoBehaviour
     {
         appearanceStars = GameObject.Find("AppearenceStars").GetComponent<StarController>();
         interiorStars = GameObject.Find("InteriorStars").GetComponent<StarController>();
-        saftyStars = GameObject.Find("SaftyStars").GetComponent<StarController>();
+        safetyStars = GameObject.Find("SafetyStars").GetComponent<StarController>();
         speedStars = GameObject.Find("SpeedStars").GetComponent<StarController>();
 
         modelTextBox = GameObject.Find("ModelText").GetComponent<Text>();
@@ -27,12 +27,11 @@ public class StatsPannelController : MonoBehaviour
         priceTextBox = GameObject.Find("ShipPrice").GetComponent<Text>();
     }
 
-    public void UpdateStats(string model, string size, int appearanceVal, int interiorVal, int saftyVal, int speedVal, int shipPrice)
+    public void UpdateStats(string model, string size, int appearanceVal, int interiorVal, int safetyVal, int speedVal, int shipPrice)
     {
-
         appearanceStars.UpdateStarNum(appearanceVal);
         interiorStars.UpdateStarNum(interiorVal);
-        saftyStars.UpdateStarNum(saftyVal);
+        safetyStars.UpdateStarNum(safetyVal);
         speedStars.UpdateStarNum(speedVal);
 
         modelTextBox.text = model;
