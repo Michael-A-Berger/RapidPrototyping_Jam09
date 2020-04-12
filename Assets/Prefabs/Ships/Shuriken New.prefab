@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -5099738419471821401, guid: 923cde118f64a6148bbc5175d7253c08,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,10 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: Shuriken
   value: 500
-  appearancevalue: 0
-  interiorvalue: 0
-  safetyvalue: 0
-  speedvalue: 0
   appearance: 5
   interior: 1
   safety: 2

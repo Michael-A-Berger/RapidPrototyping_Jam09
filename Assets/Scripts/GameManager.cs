@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject BoastPanel;
 
     public Text incomeText;
+    public Text totalIncomeText;
     private float income;
     private float totalShipValue;
     private AudioManager audioMng = null;
@@ -34,7 +35,8 @@ public class GameManager : MonoBehaviour
     {
         income = 0.0f;
         totalShipValue = 0.0f;
-        incomeText = GameObject.Find("TotalIncome").GetComponent<Text>();
+        incomeText = GameObject.Find("CurentIncome").GetComponent<Text>();
+        totalIncomeText = GameObject.Find("TotalIncome").GetComponent<Text>();
         ships = new List<ShipStats>();
         SpawnShips();
         SpawnCustomer();
@@ -85,6 +87,7 @@ public class GameManager : MonoBehaviour
     private void SpawnShips()
     {
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("ShipSpawnPoint");
+        Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
         HashSet<int> exclude = new HashSet<int>();
 
         foreach (GameObject spawn in spawnPoints)
@@ -97,21 +100,28 @@ public class GameManager : MonoBehaviour
             GameObject spawnedShip = Instantiate(shipPrefabs[shipIndex], spawn.transform.position, Quaternion.identity);
             exclude.Add(shipIndex);
 
+            spawnedShip.transform.localScale = new Vector3(spawnedShip.transform.localScale.x * 45f, spawnedShip.transform.localScale.y * 45f, 1f);
+            spawnedShip.transform.parent = mainCanvas;
+
             totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
         }
 
         AddIncome(0.0f);
+        totalIncomeText.text = "/ " + totalShipValue;
     }
 
     public void SpawnCustomer()
     {
         currentInterviewPreference = 5;
         Vector3 spawnPoint = GameObject.FindGameObjectWithTag("CustomerSpawnPoint").transform.position;
+        Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
 
         if (previousCustomerIndex == -1)
         {
             int randomIndex = Random.Range(0, customerPrefabs.Length);
-            Instantiate(customerPrefabs[randomIndex], spawnPoint, Quaternion.identity);
+            GameObject spawnedCustomer = Instantiate(customerPrefabs[randomIndex], spawnPoint, Quaternion.identity);
+            spawnedCustomer.transform.localScale = new Vector3(spawnedCustomer.transform.localScale.x * 45f, spawnedCustomer.transform.localScale.y * 45f, 1f);
+            spawnedCustomer.transform.parent = mainCanvas;
         }
         else
         {
@@ -121,7 +131,9 @@ public class GameManager : MonoBehaviour
             int randomIndex = Random.Range(0, customerPrefabs.Length - exclude.Count);
             int customerIndex = range.ElementAt(randomIndex);
 
-            Instantiate(customerPrefabs[customerIndex], spawnPoint, Quaternion.identity);
+            GameObject spawnedCustomer = Instantiate(customerPrefabs[customerIndex], spawnPoint, Quaternion.identity);
+            spawnedCustomer.transform.localScale = new Vector3(spawnedCustomer.transform.localScale.x * 45f, spawnedCustomer.transform.localScale.y * 45f, 1f);
+            spawnedCustomer.transform.parent = mainCanvas;
             previousCustomerIndex = customerIndex;
         }
 
@@ -136,7 +148,7 @@ public class GameManager : MonoBehaviour
     public void AddIncome(float amount)
     {
         income += amount;
-        incomeText.text = "Amount Earned: " + income + " / " + totalShipValue;
+        incomeText.text = income.ToString();
         int randomSound = Random.Range(1, 4);
         //audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }

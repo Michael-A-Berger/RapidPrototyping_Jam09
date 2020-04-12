@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2912993981951675391, guid: fe0b107e4f77e2641b3f5af4c44e45d7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,10 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: Orb
   value: 500
-  appearancevalue: 0
-  interiorvalue: 0
-  safetyvalue: 0
-  speedvalue: 0
   appearance: 2
   interior: 2
   safety: 4
