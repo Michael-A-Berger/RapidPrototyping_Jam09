@@ -20,6 +20,12 @@ public class GameManager : MonoBehaviour
 
     private StatsPannelController statsPannelController;
 
+    // UI used to display available dealer actions remaining
+    private Text actionsText;
+    // Current count of actions left, an int between 0 and 5, starting at 5 with each new customer
+    private int dealerActions;
+    private int maxActions = 5;
+
     public static GameManager instance;
 
     public ShipStats currentShip;
@@ -37,6 +43,8 @@ public class GameManager : MonoBehaviour
     public Text totalIncomeText;
     private float income;
     private float totalShipValue;
+    private Text feedbackText;
+
     private AudioManager audioMng = null;
 
     public int currentSelectedShipIndex = -1;
@@ -62,8 +70,13 @@ public class GameManager : MonoBehaviour
         totalShipValue = 0.0f;
         incomeText = GameObject.Find("CurentIncome").GetComponent<Text>();
         totalIncomeText = GameObject.Find("TotalIncome").GetComponent<Text>();
+        actionsText = GameObject.Find("DealerActions").GetComponent<Text>();
+        dealerActions = maxActions;
+        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
         statsPannelController = FindObjectOfType<StatsPannelController>();
         ships = new List<ShipStats>();
+        feedbackText = GameObject.Find("FeedbackLine").GetComponent<Text>();
+        feedbackText.text = "";
         audioMng = FindObjectOfType<AudioManager>();
         if (audioMng == null)
             Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
@@ -86,6 +99,8 @@ public class GameManager : MonoBehaviour
 
         if (currentInterviewRank == 2)
             GameObject.Find("Interview").GetComponent<Button>().interactable = false;
+
+        DealerActionCountdown();
     }
 
     public void ActivateBoastPanel()
@@ -97,18 +112,26 @@ public class GameManager : MonoBehaviour
     {
         currentCustomer.Boast(stat);
         BoastPanel.SetActive(false);
-        GameObject.Find("Boast").GetComponent<Button>().interactable = false;
+
+        DealerActionCountdown();
     }
 
     public void Snacks()
     {
         currentCustomer.OfferSnacks();
         GameObject.Find("Snacks").GetComponent<Button>().interactable = false;
+
+        DealerActionCountdown();
     }
 
-    void Offer(float amount, ShipStats ship)
+    public void Offer()
     {
+        // THIS IS A PLACEHOLDER AND DOES NOT ALLOW FOR PLAYER CHOICE
+        float amount = 1000;
+        ShipStats ship = currentShip;
         currentCustomer.MakeOffer(amount, ship);
+
+        DealerActionCountdown();
     }
 
     private void SpawnShips()
@@ -169,6 +192,10 @@ public class GameManager : MonoBehaviour
         GameObject.Find("Snacks").GetComponent<Button>().interactable = true;
         GameObject.Find("Offer").GetComponent<Button>().interactable = true;
 
+        dealerActions = maxActions;
+        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        feedbackText.text = "";
+
         audioMng.PlayAudio("Customer Arrives");
     }
 
@@ -188,5 +215,33 @@ public class GameManager : MonoBehaviour
     public void UpdateStatsPannel(string model, string size, int appearanceVal, int interiorVal, int saftyVal, int speedVal, int shipPrice)
     {
         statsPannelController.UpdateStats(model, size, appearanceVal, interiorVal, saftyVal, speedVal, shipPrice);
+    }
+
+    private void DealerActionCountdown()
+    {
+        dealerActions--;
+        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        if (dealerActions == 0)
+        {
+            StartCoroutine("WaitForTextBeforeEndOfCustomer");
+        }
+    }
+
+    private IEnumerator WaitForTextBeforeEndOfCustomer()
+    {
+        // The player has 2 seconds to read whatever text was recently displayed, then another customer will be spawned after another 2 seconds
+        GameObject.Find("Interview").GetComponent<Button>().interactable = false;          //block buttons
+        GameObject.Find("Boast").GetComponent<Button>().interactable = false;
+        GameObject.Find("Snacks").GetComponent<Button>().interactable = false;
+        GameObject.Find("Offer").GetComponent<Button>().interactable = false;
+
+        bool stillWaiting = true;
+
+        while (stillWaiting)
+        {
+            yield return new WaitForSeconds(2.0f);
+            currentCustomer.UpdatePatience(-100f);
+            stillWaiting = false;
+        }
     }
 }
