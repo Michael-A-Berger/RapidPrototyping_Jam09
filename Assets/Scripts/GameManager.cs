@@ -7,10 +7,16 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
+    // List of prefabs used
     private GameObject[] shipPrefabs, customerPrefabs;
+    // List of data for ships
     private List<ShipStats> ships;
+    // Initial value for previous customer, set to -1 since the first current customer is at 0
     private int previousCustomerIndex = -1;
-    private int currentInterviewPreference;
+    // Customer have 5 preference and are ranked from 1 to 5 where 5 is the most important
+    // When customer is first interviewed, they will start by saying the most important thing to them and time customer is interviewed again they will say the next most important thing
+    // currentInterviewRank represent current 
+    private int currentInterviewRank;
 
     public static GameManager instance;
 
@@ -54,10 +60,10 @@ public class GameManager : MonoBehaviour
 
     public void Interview()
     {
-        currentCustomer.Interview(currentInterviewPreference);
-        currentInterviewPreference--;
+        currentCustomer.Interview(currentInterviewRank);
+        currentInterviewRank--;
 
-        if (currentInterviewPreference == 2)
+        if (currentInterviewRank == 2)
             GameObject.Find("Interview").GetComponent<Button>().interactable = false;
     }
 
@@ -112,7 +118,7 @@ public class GameManager : MonoBehaviour
 
     public void SpawnCustomer()
     {
-        currentInterviewPreference = 5;
+        currentInterviewRank = 5;
         Vector3 spawnPoint = GameObject.FindGameObjectWithTag("CustomerSpawnPoint").transform.position;
         Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
 

@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class ShipStats : MonoBehaviour
 {
-    // This would be "name," but that term is reserved
+    //Name of the ship
     public string model;
 
-    public float value; // The actual value of the ship   
+    //Value of the ship
+    public float value;  
     
-    // The five stats for determining the selling price
+    //The five stats for determining the selling price
     public int appearance;
     public int interior;
     public int safety;
     public int speed;
-    public enum SizeCategory { Small, Regular, Large, Irrelevant } // Irrelevant is used by customers only
+    public enum SizeCategory { Small, Regular, Large}
     public SizeCategory size;
 
-    // Ship modifiers are distinct from customer modifiers
+    // Saved for future use of special ship characteristics
     public enum ShipModifier { None }
     public ShipModifier modifier = ShipModifier.None;
 

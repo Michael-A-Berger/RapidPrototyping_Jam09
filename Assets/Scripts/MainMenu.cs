@@ -99,4 +99,10 @@ public class MainMenu : MonoBehaviour
         CreditsVisibility(false);
         MainMenuVisibility(true);
     }
+
+    // LoadGameFunc()
+    private void LoadGameFunc(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
