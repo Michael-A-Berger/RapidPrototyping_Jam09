@@ -300,9 +300,10 @@ public class CustomerStats : MonoBehaviour
                 GameManager.instance.currentSoldShipParent = null;
             }
             // remove the current ship selection
-            GameManager.instance.RemoveShipSelection();
             GameManager.instance.SpawnCustomer();
             Destroy(gameObject);
+            GameManager.instance.RemoveShipSelection();
+            GameManager.instance.InitUIComponets();
         }
     }
 }

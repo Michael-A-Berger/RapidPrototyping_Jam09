@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public Text netIncomeText;
     public Text speechBubble;
     public Text feedbackText;
+    public Text promptText;
 
     // Pannel Controller object
     private StatsPannelController statsPannelController;
@@ -116,6 +117,7 @@ public class GameManager : MonoBehaviour
         incomeText = GameObject.Find("TotalIncome").GetComponent<Text>();
         netIncomeText = GameObject.Find("NetIncome").GetComponent<Text>();
         actionsText = GameObject.Find("DealerActions").GetComponent<Text>();
+        promptText = GameObject.Find("PromptText").GetComponent<Text>();
 
         // Locate stats pannel controller
         statsPannelController = FindObjectOfType<StatsPannelController>();
@@ -136,6 +138,7 @@ public class GameManager : MonoBehaviour
         SpawnCustomer();
 
         BoastPanel.SetActive(false);
+        InitUIComponets();
     }
 
     // Update is called once per frame
@@ -302,11 +305,11 @@ public class GameManager : MonoBehaviour
 
         AddIncome(0.0f, 0.0f);
 
-        GameObject[] docks = GameObject.FindGameObjectsWithTag("ShipDock");
-        foreach (GameObject dock in docks)
-        {
-            dock.GetComponent<DockHandler>().TurnOnDefault();
-        }
+        //GameObject[] docks = GameObject.FindGameObjectsWithTag("ShipDock");
+        //foreach (GameObject dock in docks)
+        //{
+        //    dock.GetComponent<DockHandler>().TurnOnDefault();
+        //}
     }
 
     // Yuanchao's code of spawn only one ship
@@ -401,6 +404,7 @@ public class GameManager : MonoBehaviour
         ActivateCurrentShipDock(parent.Find("Dock"));
 
         BoastPanel.SetActive(false);
+        ActivateUIComponetsOnShipSelect();
     }
 
     //
@@ -477,5 +481,22 @@ public class GameManager : MonoBehaviour
         {
             dock.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         }
+        statsPannelController.UpdateStats("Model", "Size", 0, 0, 0, 0, 0);
+    }
+
+    public void InitUIComponets()
+    {
+        GameObject.Find("Boast").GetComponent<Button>().interactable = false;
+        GameObject.Find("Offer").GetComponent<Button>().interactable = false;
+        //show prompt
+        promptText.gameObject.SetActive(true);
+    }
+
+    public void ActivateUIComponetsOnShipSelect()
+    {
+        GameObject.Find("Boast").GetComponent<Button>().interactable = true;
+        GameObject.Find("Offer").GetComponent<Button>().interactable = true;
+        //hide prompt
+        promptText.gameObject.SetActive(false);
     }
 }
