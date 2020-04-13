@@ -125,15 +125,16 @@ public class GameManager : MonoBehaviour
         dealerActions = maxActions;
         ships = new List<ShipStats>();
 
-        // Spawn 5 ships and 1 customer when game starts
-        SpawnShips();
-        SpawnCustomer();
         BoastPanel.SetActive(false);
 
         // Locate AudioManager
         audioMng = FindObjectOfType<AudioManager>();
         if (audioMng == null)
             Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
+
+        // Spawn 5 ships and 1 customer when game starts
+        SpawnShips();
+        SpawnCustomer();
     }
 
     // Update is called once per frame

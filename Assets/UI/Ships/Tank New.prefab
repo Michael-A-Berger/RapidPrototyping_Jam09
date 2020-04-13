@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1337064778949223030}
   - component: {fileID: 7992817843273593526}
-  - component: {fileID: -8888451755143625107}
   - component: {fileID: 7805998786933887288}
   - component: {fileID: 1565106599941993558}
   - component: {fileID: 7993550943943451714}
@@ -61,20 +60,6 @@ MonoBehaviour:
   speed: 1
   size: 0
   modifier: 0
---- !u!114 &-8888451755143625107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7992817843273593525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipText: 
-  hovering: 0
 --- !u!65 &7805998786933887288
 BoxCollider:
   m_ObjectHideFlags: 0

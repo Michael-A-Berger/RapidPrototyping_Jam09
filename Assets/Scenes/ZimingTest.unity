@@ -2543,7 +2543,6 @@ GameObject:
   - component: {fileID: 933623157}
   - component: {fileID: 933623156}
   - component: {fileID: 933623155}
-  - component: {fileID: 933623158}
   m_Layer: 5
   m_Name: Interview
   m_TagString: Untagged
@@ -2672,21 +2671,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933623153}
   m_CullTransparentMesh: 0
---- !u!114 &933623158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933623153}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipText: Hi! I'm a tooltip! Add the final tooltips for these buttons in the
-    editor under the Tooltip component!
-  hovering: 0
 --- !u!1 &940624193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2683,6 @@ GameObject:
   - component: {fileID: 940624197}
   - component: {fileID: 940624196}
   - component: {fileID: 940624195}
-  - component: {fileID: 940624198}
   m_Layer: 5
   m_Name: Snacks
   m_TagString: Untagged
@@ -2828,21 +2811,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940624193}
   m_CullTransparentMesh: 0
---- !u!114 &940624198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940624193}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipText: Hi! I'm a tooltip! Add the final tooltips for these buttons in the
-    editor under the Tooltip component!
-  hovering: 0
 --- !u!1 &1009483250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,17 +3875,13 @@ MonoBehaviour:
   - {fileID: 8904614707176069794, guid: c1c20c2caaf0a489abbdf0c2e035f2e8, type: 3}
   - {fileID: 6208744681924399384, guid: 391cc346c8b2a4ac3ac2cdd342436cf0, type: 3}
   - {fileID: 8613430567458801659, guid: 998f1b06057ba4072b736afa1a51e3da, type: 3}
-  currentShip: {fileID: 0}
-  currentCustomer: {fileID: 0}
-  finalBuyingPrice: 0
-  inter: {fileID: 0}
-  boa: {fileID: 0}
-  sna: {fileID: 0}
-  offer: {fileID: 0}
+  currentShipParent: {fileID: 0}
   BoastPanel: {fileID: 2059518765}
+  OfferPanel: {fileID: 0}
   incomeText: {fileID: 0}
   totalIncomeText: {fileID: 0}
-  currentSelectedShipIndex: -1
+  speechBubble: {fileID: 0}
+  feedbackText: {fileID: 0}
 --- !u!4 &1286412933
 Transform:
   m_ObjectHideFlags: 0
@@ -4091,7 +4055,6 @@ GameObject:
   - component: {fileID: 1447693584}
   - component: {fileID: 1447693583}
   - component: {fileID: 1447693582}
-  - component: {fileID: 1447693581}
   m_Layer: 5
   m_Name: Offer
   m_TagString: Untagged
@@ -4119,21 +4082,6 @@ RectTransform:
   m_AnchoredPosition: {x: 355.99997, y: -440}
   m_SizeDelta: {x: 250, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1447693581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447693579}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipText: Hi! I'm a tooltip! Add the final tooltips for these buttons in the
-    editor under the Tooltip component!
-  hovering: 0
 --- !u!114 &1447693582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4496,7 +4444,6 @@ GameObject:
   - component: {fileID: 1558806448}
   - component: {fileID: 1558806447}
   - component: {fileID: 1558806446}
-  - component: {fileID: 1558806445}
   m_Layer: 5
   m_Name: Boast
   m_TagString: Untagged
@@ -4524,21 +4471,6 @@ RectTransform:
   m_AnchoredPosition: {x: 355.99997, y: -300.00003}
   m_SizeDelta: {x: 240, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1558806445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558806443}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipText: Hi! I'm a tooltip! Add the final tooltips for these buttons in the
-    editor under the Tooltip component!
-  hovering: 0
 --- !u!114 &1558806446
 MonoBehaviour:
   m_ObjectHideFlags: 0
