@@ -137,7 +137,7 @@ public class GameManager : MonoBehaviour
     private void SpawnShips()
     {
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("ShipSpawnPoint");
-        Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
+        //Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
         HashSet<int> exclude = new HashSet<int>();
 
         foreach (GameObject spawn in spawnPoints)
@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
             exclude.Add(shipIndex);
 
             spawnedShip.transform.localScale = new Vector3(spawnedShip.transform.localScale.x * 45f, spawnedShip.transform.localScale.y * 45f, 1f);
-            spawnedShip.transform.SetParent(mainCanvas);
+            spawnedShip.transform.SetParent(spawn.transform.parent);
 
             totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
         }
@@ -207,14 +207,26 @@ public class GameManager : MonoBehaviour
         audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }
 
-    private void ShowToolTip(string toolTip)
-    {
+    //private void ShowToolTip(string toolTip)
+    //{
 
+    //}
+
+    public void GetCurrentShip(ShipStats selectedShip, Transform parent)
+    {
+        statsPannelController.UpdateStats(selectedShip.model, selectedShip.size.ToString(), selectedShip.appearance, selectedShip.interior, selectedShip.safety, selectedShip.speed, Mathf.FloorToInt(selectedShip.value));
+        currentShip = selectedShip;
+        ActivateCurrentShipDock(parent.Find("Dock"));
     }
 
-    public void UpdateStatsPannel(string model, string size, int appearanceVal, int interiorVal, int saftyVal, int speedVal, int shipPrice)
+    private void ActivateCurrentShipDock(Transform currentDock)
     {
-        statsPannelController.UpdateStats(model, size, appearanceVal, interiorVal, saftyVal, speedVal, shipPrice);
+        GameObject[] docks = GameObject.FindGameObjectsWithTag("ShipDock");
+        foreach (GameObject dock in docks)
+        {
+            dock.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        }
+        currentDock.GetComponent<Image>().color = new Color32(22, 103, 222, 255);
     }
 
     private void DealerActionCountdown()
