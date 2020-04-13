@@ -81,7 +81,7 @@ public class CustomerStats : MonoBehaviour
 
         patienceText = GameObject.Find("CustomerPatience").GetComponent<Text>();
         patience = 100.0f;
-        patienceText.text = "Customer Patience: " + patience + "%";
+        patienceText.text = patience.ToString();
 
         //initialize modifiers
         appearanceModifier = convertWeightToModifier(appearanceRank);
@@ -356,7 +356,7 @@ public class CustomerStats : MonoBehaviour
     {
         patience += amount;
         patience = Mathf.Clamp(patience, 0.0f, 100.0f);
-        patienceText.text = "Customer Patience: " + patience + "%";
+        patienceText.text = patience.ToString();
         if (patience == 0)
         {
             feedbackText.text = "Out of Patience";

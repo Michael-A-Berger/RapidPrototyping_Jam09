@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         totalIncomeText = GameObject.Find("TotalIncome").GetComponent<Text>();
         actionsText = GameObject.Find("DealerActions").GetComponent<Text>();
         dealerActions = maxActions;
-        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        actionsText.text = dealerActions.ToString();
         statsPannelController = FindObjectOfType<StatsPannelController>();
         ships = new List<ShipStats>();
         feedbackText = GameObject.Find("FeedbackLine").GetComponent<Text>();
@@ -137,7 +137,6 @@ public class GameManager : MonoBehaviour
     public void SpawnShips()
     {
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("ShipSpawnPoint");
-        //Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
         HashSet<int> exclude = new HashSet<int>();
 
         foreach (GameObject spawn in spawnPoints)
@@ -170,14 +169,14 @@ public class GameManager : MonoBehaviour
     {
         currentInterviewRank = 5;
         Vector3 spawnPoint = GameObject.FindGameObjectWithTag("CustomerSpawnPoint").transform.position;
-        Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
+        Transform container = GameObject.Find("CustomerContainer").transform;
 
         if (previousCustomerIndex == -1)
         {
             int randomIndex = Random.Range(0, customerPrefabs.Length);
             GameObject spawnedCustomer = Instantiate(customerPrefabs[randomIndex], spawnPoint, Quaternion.identity);
             spawnedCustomer.transform.localScale = new Vector3(spawnedCustomer.transform.localScale.x * 45f, spawnedCustomer.transform.localScale.y * 45f, 1f);
-            spawnedCustomer.transform.SetParent(mainCanvas);
+            spawnedCustomer.transform.SetParent(container);
         }
         else
         {
@@ -189,7 +188,7 @@ public class GameManager : MonoBehaviour
 
             GameObject spawnedCustomer = Instantiate(customerPrefabs[customerIndex], spawnPoint, Quaternion.identity);
             spawnedCustomer.transform.localScale = new Vector3(spawnedCustomer.transform.localScale.x * 45f, spawnedCustomer.transform.localScale.y * 45f, 1f);
-            spawnedCustomer.transform.SetParent(mainCanvas);
+            spawnedCustomer.transform.SetParent(container);
             previousCustomerIndex = customerIndex;
         }
 
@@ -199,7 +198,7 @@ public class GameManager : MonoBehaviour
         GameObject.Find("Offer").GetComponent<Button>().interactable = true;
 
         dealerActions = maxActions;
-        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        actionsText.text = dealerActions.ToString();
         feedbackText.text = "";
 
         audioMng.PlayAudio("Customer Arrives");
@@ -238,7 +237,7 @@ public class GameManager : MonoBehaviour
     private void DealerActionCountdown()
     {
         dealerActions--;
-        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        actionsText.text = dealerActions.ToString();
         if (dealerActions == 0)
         {
             StartCoroutine("WaitForTextBeforeEndOfCustomer");

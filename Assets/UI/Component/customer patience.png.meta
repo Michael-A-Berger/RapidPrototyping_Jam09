@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 473e903b2a43d433e8697e7a3e03902a
+guid: 3049d96d869f2449b9f79b4a3986f95e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3886443268029631212
-    second: money_0
+      213: 733211096535474739
+    second: customer patience_7
+  - first:
+      213: 2389358700585932120
+    second: customer patience_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -89,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: money_0
+      name: customer patience_7
       rect:
         serializedVersion: 2
-        x: 66
-        y: 224
-        width: 282
-        height: 71
+        x: 179
+        y: 402
+        width: 237
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,8 +106,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52f8956d99e4641848fb811ed450ed0a
-      internalID: 3886443268029631212
+      spriteID: aec1cde1788ab4999ab36d9de6eb8592
+      internalID: 733211096535474739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: customer patience_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 139
+        width: 288
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208635793fe194481af9adb91605cdea
+      internalID: 2389358700585932120
       vertices: []
       indices: 
       edges: []
