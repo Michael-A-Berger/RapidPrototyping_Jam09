@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public Button sna;
     public Button offer;
     public GameObject BoastPanel;
+    public GameObject OfferPanel;
 
     public Text incomeText;
     public Text totalIncomeText;
@@ -127,11 +128,25 @@ public class GameManager : MonoBehaviour
     public void Offer()
     {
         // THIS IS A PLACEHOLDER AND DOES NOT ALLOW FOR PLAYER CHOICE
-        float amount = 1000;
-        ShipStats ship = currentShip;
-        currentCustomer.MakeOffer(amount, currentShip);
+        OfferPanel.SetActive(true);
+        GameObject.Find("Offer").GetComponent<Button>().interactable = false;        
+    }
+    public void ConfirmPrice()
+    {
+        float amount = float.Parse(GameObject.Find("InputPrice").GetComponent<InputField>().text);
+        if (amount <= 0)
+        {
+            ;//Error input
+        }
+        else
+        {
+            ShipStats ship = currentShip;
+            currentCustomer.MakeOffer(amount, currentShip);
 
-        DealerActionCountdown();
+            DealerActionCountdown();
+        }
+        OfferPanel.SetActive(false);
+        GameObject.Find("Offer").GetComponent<Button>().interactable = true;
     }
 
     public void SpawnShips()
