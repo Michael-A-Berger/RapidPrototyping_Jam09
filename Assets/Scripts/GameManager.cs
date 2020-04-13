@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public ShipStats currentShip;
+    public Transform currentShipParent;
     public CustomerStats currentCustomer;
 
     public float finalBuyingPrice;
@@ -149,6 +150,26 @@ public class GameManager : MonoBehaviour
         GameObject.Find("Offer").GetComponent<Button>().interactable = true;
     }
 
+    public void SpawnOneShip(Transform SpawnPointParent)
+    {
+        Destroy(SpawnPointParent.GetChild(2).gameObject);
+        Transform spawn = SpawnPointParent.GetChild(0);
+        HashSet<int> exclude = new HashSet<int>();
+        IEnumerable<int> range = Enumerable.Range(0, shipPrefabs.Length).Where(i => !exclude.Contains(i));
+
+        int randomIndex = Random.Range(0, shipPrefabs.Length - exclude.Count);
+        int shipIndex = range.ElementAt(randomIndex);
+
+        GameObject spawnedShip = Instantiate(shipPrefabs[shipIndex], spawn.position, Quaternion.identity);
+        exclude.Add(shipIndex);
+
+        spawnedShip.transform.localScale = new Vector3(spawnedShip.transform.localScale.x * 45f, spawnedShip.transform.localScale.y * 45f, 1f);
+        spawnedShip.transform.SetParent(spawn.parent);
+
+        totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
+        totalIncomeText.text = "/ " + totalShipValue;
+    }
+
     public void SpawnShips()
     {
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("ShipSpawnPoint");
@@ -237,6 +258,7 @@ public class GameManager : MonoBehaviour
     {
         statsPannelController.UpdateStats(selectedShip.model, selectedShip.size.ToString(), selectedShip.appearance, selectedShip.interior, selectedShip.safety, selectedShip.speed, Mathf.FloorToInt(selectedShip.value));
         currentShip = selectedShip;
+        currentShipParent = parent;
         ActivateCurrentShipDock(parent.Find("Dock"));
     }
 

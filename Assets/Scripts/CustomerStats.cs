@@ -382,7 +382,7 @@ public class CustomerStats : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(2.0f);
-            manager.SpawnShips();
+            manager.SpawnOneShip(manager.currentShipParent);
             manager.SpawnCustomer();
             Destroy(gameObject);
         }
