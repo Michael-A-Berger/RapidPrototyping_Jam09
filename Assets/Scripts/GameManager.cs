@@ -103,6 +103,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        // Locate AudioManager
+        audioMng = FindObjectOfType<AudioManager>();
+        if (audioMng == null)
+            Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
+
         // Find the dialogue UI
         speechBubble = GameObject.Find("SpeechText").GetComponent<Text>();
         feedbackText = GameObject.Find("FeedbackLine").GetComponent<Text>();
@@ -129,11 +134,6 @@ public class GameManager : MonoBehaviour
         SpawnShips();
         SpawnCustomer();
         BoastPanel.SetActive(false);
-
-        // Locate AudioManager
-        audioMng = FindObjectOfType<AudioManager>();
-        if (audioMng == null)
-            Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
     }
 
     // Update is called once per frame
@@ -380,7 +380,7 @@ public class GameManager : MonoBehaviour
         incomeText.text = "Total income: " + income + " Net Income: " + netIncome;
         //incomeText.text = "Amount Earned: " + income + " / " + totalShipValue;
         int randomSound = Random.Range(1, 4);
-        //audioMng.PlayAudio("Spaceship Sold " + randomSound);
+        audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }
 
     // Select a ship
