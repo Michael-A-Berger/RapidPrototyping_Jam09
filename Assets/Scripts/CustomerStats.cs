@@ -275,17 +275,50 @@ public class CustomerStats : MonoBehaviour
         //patience f(x)=0.003x+0.8
         //each stats has a value
         float appearanceValue, interiorValue, safetyValue, speedValue;
-        appearanceValue = ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        interiorValue = ship.interior / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        safetyValue = ship.safety / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        speedValue = ship.speed / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+        appearanceValue = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        interiorValue = (float)ship.interior / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        safetyValue = (float)ship.safety / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        speedValue = (float)ship.speed / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
 
         float maximumOffer = (appearanceValue * appearanceModifier) + (interiorValue * interiorModifier) + (safetyValue * safetyModifier) + (speedValue * speedModifier)
             * (0.003f * patience + 0.8f) * sizeModifier;
 
+        // Round the highest price to a multiple of 100
+        int holder = (int)maximumOffer/100;
+        maximumOffer = holder * 100;
+
+        /*Debug.Log("Size preference: " + sizePreference);
+        Debug.Log("Ship size: " + ship.size);
+        Debug.Log("Ship appearance: " + ship.appearance);
+        Debug.Log("Ship interior: " + ship.interior);
+        Debug.Log("Ship safety: " + ship.safety);
+        Debug.Log("Ship speed: " + ship.speed);
+        Debug.Log("Ship value: " + ship.value);
+
+        Debug.Log("Appearance modifier: " + appearanceModifier);
+        Debug.Log("Ship appearance value: " + appearanceValue);
+        Debug.Log("Interior modifier: " + interiorModifier);
+        Debug.Log("Ship interior value: " + interiorValue);
+        Debug.Log("Safety modifier: " + safetyModifier);
+        Debug.Log("Ship safety value: " + safetyValue);
+        Debug.Log("Speed modifier: " + speedModifier);
+        Debug.Log("Ship speed value: " + speedValue);
+
+        float theAnswer = (float)ship.appearance + (float)ship.interior;
+        Debug.Log("Math in steps: ship.appearance + ship.interior = " + theAnswer);
+        theAnswer = (float)ship.appearance + (float)ship.interior + (float)ship.safety;
+        Debug.Log("ship.appearance + ship.interior + ship.safety = " + theAnswer);
+        theAnswer = (float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed;
+        Debug.Log("ship.appearance + ship.interior + ship.safety + ship.speed = " + theAnswer);
+        theAnswer = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed);
+        Debug.Log("ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) = " + theAnswer);
+        theAnswer = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        Debug.Log("ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value = " + theAnswer);
+
         Debug.Log("Input amount: " + amount);
 
         Debug.Log("Perfect amount: " + maximumOffer);
+        Debug.Log("Rounded perfect amount: " + holder);*/
 
         if (amount <= maximumOffer)
         {

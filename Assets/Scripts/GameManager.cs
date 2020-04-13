@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
     public void Offer()
     {
         // THIS IS A PLACEHOLDER AND DOES NOT ALLOW FOR PLAYER CHOICE
-        float amount = 0;
+        float amount = 1000;
         ShipStats ship = currentShip;
         currentCustomer.MakeOffer(amount, currentShip);
 
