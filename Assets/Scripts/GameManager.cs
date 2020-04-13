@@ -127,14 +127,14 @@ public class GameManager : MonoBehaviour
     public void Offer()
     {
         // THIS IS A PLACEHOLDER AND DOES NOT ALLOW FOR PLAYER CHOICE
-        float amount = 1000;
+        float amount = 0;
         ShipStats ship = currentShip;
-        currentCustomer.MakeOffer(amount, ship);
+        currentCustomer.MakeOffer(amount, currentShip);
 
         DealerActionCountdown();
     }
 
-    private void SpawnShips()
+    public void SpawnShips()
     {
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("ShipSpawnPoint");
         //Transform mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").transform;
@@ -158,6 +158,12 @@ public class GameManager : MonoBehaviour
 
         AddIncome(0.0f);
         totalIncomeText.text = "/ " + totalShipValue;
+
+        GameObject[] docks = GameObject.FindGameObjectsWithTag("ShipDock");
+        foreach (GameObject dock in docks)
+        {
+            dock.GetComponent<DockHandler>().TurnOnDefault();
+        }
     }
 
     public void SpawnCustomer()
@@ -252,7 +258,7 @@ public class GameManager : MonoBehaviour
         while (stillWaiting)
         {
             yield return new WaitForSeconds(2.0f);
-            currentCustomer.UpdatePatience(-100f);
+            currentCustomer.OutOfActions();
             stillWaiting = false;
         }
     }

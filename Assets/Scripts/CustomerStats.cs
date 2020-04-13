@@ -152,7 +152,6 @@ public class CustomerStats : MonoBehaviour
     {
         speechBubble.text = boastResponse[Random.Range(0, boastResponse.Length)];
 
-        // MORE PLACEHOLDER MATH. SHOULD CHANGE BASED ON HOW MUCH THEY LIKE THE STAT
         switch (stat)
         {       
             case 1:
@@ -178,18 +177,12 @@ public class CustomerStats : MonoBehaviour
 
     public void OfferSnacks()
     {
-        // MORE PLACEHOLDER VALUES
         speechBubble.text = snackResponse[Random.Range(0, snackResponse.Length)];
         UpdatePatience(100.0f);
     }
 
     public void MakeOffer(float amount, ShipStats ship)
     {
-        // THIS IS ALL PLACEHOLDER MATH THAT ALL NEEDS TO BE REPLACED!!!
-
-        Debug.Log("Size preference: " + sizePreference);
-        Debug.Log("Input ship size: " + ship.size);
-
         //size modifier math
         if (sizePreference != ship.size)
         {
@@ -290,6 +283,10 @@ public class CustomerStats : MonoBehaviour
         float maximumOffer = (appearanceValue * appearanceModifier) + (interiorValue * interiorModifier) + (safetyValue * safetyModifier) + (speedValue * speedModifier)
             * (0.003f * patience + 0.8f) * sizeModifier;
 
+        Debug.Log("Input amount: " + amount);
+
+        Debug.Log("Perfect amount: " + maximumOffer);
+
         if (amount <= maximumOffer)
         {
             manager.AddIncome(amount);
@@ -322,14 +319,22 @@ public class CustomerStats : MonoBehaviour
         }
     }
 
-    public void UpdatePatience(float amount)
+    private void UpdatePatience(float amount)
     {
-        // ALL CALLS TO THIS HAVE PLACEHOLDER VALUES OF -1.0 RIGHT NOW
         patience += amount;
         patience = Mathf.Clamp(patience, 0.0f, 100.0f);
         patienceText.text = "Customer Patience: " + patience + "%";
         if (patience == 0)
+        {
+            feedbackText.text = "Out of Patience";
             StartCoroutine("SpawnNextCustomer");
+        }
+    }
+
+    public void OutOfActions()
+    {
+        feedbackText.text = "Out of Actions";
+        StartCoroutine("SpawnNextCustomer");
     }
 
     private IEnumerator SpawnNextCustomer()
@@ -340,11 +345,11 @@ public class CustomerStats : MonoBehaviour
         GameObject.Find("Offer").GetComponent<Button>().interactable = false;
 
         speechBubble.text = leaveNoSaleResponse[Random.Range(0, leaveNoSaleResponse.Length)];
-        feedbackText.text = "Missed Sale";
 
         while (true)
         {
             yield return new WaitForSeconds(2.0f);
+            manager.SpawnShips();
             manager.SpawnCustomer();
             Destroy(gameObject);
         }
