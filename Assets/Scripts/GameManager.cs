@@ -47,8 +47,10 @@ public class GameManager : MonoBehaviour
 
     // Total income earned by this shop
     private float income;
+    // Net income = Income - shipValue
+    private float netIncome;
     // Total value of all the ships in stock (currently will increase whenever a ship is spawned, but need to be decreased once a ship is sold)
-    private float totalShipValue;
+    //private float totalShipValue;
     // For use of AudioManager
     private AudioManager audioMng = null;
 
@@ -112,12 +114,13 @@ public class GameManager : MonoBehaviour
         statsPannelController = FindObjectOfType<StatsPannelController>();
 
         // Set initial value for text
-        speechBubble.text = greetings[Random.Range(0, greetings.Length)];
+        //speechBubble.text = greetings[Random.Range(0, greetings.Length)];
         actionsText.text = "Dealer Actions: " + dealerActions + "/5";
         feedbackText.text = "";
 
         // Set initail value for variables
         income = 0.0f;
+        netIncome = 0.0f;
         totalShipValue = 0.0f;
         dealerActions = maxActions;
         ships = new List<ShipStats>();
@@ -178,15 +181,13 @@ public class GameManager : MonoBehaviour
             GameObject.Find("Interview").GetComponent<Button>().interactable = false;
     }
 
-    // SUBJECT TO CHANGE!!!!!!!!!!!!!!!!!!!!!!!!!
-    // Currently linked to boast button in UI, but have no behavior besides active the panel
+    // Currently linked to boast button in UI, activate the boast panel
     public void ActivateBoastPanel()
     {
         BoastPanel.SetActive(true);
     }
 
-    // SUBJECT TO CHANGE!!!!!!!!!!!!!!!!!!!!!!!!!
-    // Not linked to Boast button, take a stat number input as the type of boast to customer, change customer's weight of indicated type
+    // Linked to Boast button, take a stat number input according to button clicked as the type of boast to customer, change customer's weight of indicated type
     // For int stat, 1 = appearance, 2 = interior, 3 = safetly, 4 = speed, and 5 = size
     public void Boast(int stat)
     {
@@ -227,25 +228,22 @@ public class GameManager : MonoBehaviour
             ShipStats ship = currentShip;
 
             float maximumOffer = currentCustomer.takeOffer(amount, currentShip);
-
-            // When customer accept the offer
+            //When customer accept the offer
             if (amount <= maximumOffer)
             {
-                AddIncome(amount);
+                AddIncome(amount, ship.value);
                 if (amount / maximumOffer < 0.85f)
                 {
                     speechBubble.text = purchaseResponseCheap[Random.Range(0, purchaseResponseCheap.Length)];
-                    NoSaleResponce();
                     currentCustomer.OutOfActions("Perfect Price: $" + amount);
                 }
                 else
                 {
                     speechBubble.text = purchaseResponseAverage[Random.Range(0, purchaseResponseAverage.Length)];
-                    NoSaleResponce();
                     currentCustomer.OutOfActions("Perfect Price: $" + amount);
                 }
             }
-            // When customer can't accept the offer made, customer becomes inpatient
+            //When customer can't accept the offer made, customer becomes inpatient
             else
             {
                 if (amount >= maximumOffer && amount < maximumOffer * 1.2f)
@@ -258,7 +256,7 @@ public class GameManager : MonoBehaviour
                     currentCustomer.UpdatePatience(-70.0f);
                 else if (amount >= maximumOffer * 3f)
                     currentCustomer.UpdatePatience(-100.0f);
-                speechBubble.text = purchaseResponseExpensive[Random.Range(0, purchaseResponseExpensive.Length)];
+                    speechBubble.text = purchaseResponseExpensive[Random.Range(0, purchaseResponseExpensive.Length)];
             }
 
             DealerActionCountdown();
@@ -293,8 +291,8 @@ public class GameManager : MonoBehaviour
             totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
         }
 
-        AddIncome(0.0f);
-        totalIncomeText.text = "/ " + totalShipValue;
+        AddIncome(0.0f, 0.0f);
+        //totalIncomeText.text = "/ " + totalShipValue;
 
         GameObject[] docks = GameObject.FindGameObjectsWithTag("ShipDock");
         foreach (GameObject dock in docks)
@@ -321,7 +319,7 @@ public class GameManager : MonoBehaviour
         spawnedShip.transform.SetParent(spawn.parent);
 
         totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
-        totalIncomeText.text = "/ " + totalShipValue;
+        //totalIncomeText.text = "/ " + totalShipValue;
     }
 
 
@@ -375,10 +373,12 @@ public class GameManager : MonoBehaviour
     }
 
     // Add a certain amount to the current total income of the shop
-    public void AddIncome(float amount)
+    public void AddIncome(float price, float value)
     {
-        income += amount;
-        incomeText.text = "Amount Earned: " + income + " / " + totalShipValue;
+        income += price;
+        netIncome += price - value;
+        incomeText.text = "Total income: " + income + " Net Income: " + netIncome;
+        //incomeText.text = "Amount Earned: " + income + " / " + totalShipValue;
         int randomSound = Random.Range(1, 4);
         //audioMng.PlayAudio("Spaceship Sold " + randomSound);
     }
@@ -443,6 +443,12 @@ public class GameManager : MonoBehaviour
     public void UpdateFeedback(string announcement)
     {
         feedbackText.text = announcement;
+    }
+
+    // Greeting new customer
+    public void Greeting()
+    {
+        speechBubble.text = greetings[Random.Range(0, greetings.Length)];
     }
 
     // Leave no sale responce

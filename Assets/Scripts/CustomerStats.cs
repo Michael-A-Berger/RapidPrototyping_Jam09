@@ -63,6 +63,9 @@ public class CustomerStats : MonoBehaviour
         audioMng = FindObjectOfType<AudioManager>();
         if (audioMng == null)
             Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
+
+        // Greet new customer
+        manager.Greeting();
     }
 
     // Convert rank value to weight value, basically higher the rank, higher the weight
@@ -208,10 +211,10 @@ public class CustomerStats : MonoBehaviour
         //patience f(x)=0.003x+0.8
         //each stats has a value
         float appearanceValue, interiorValue, safetyValue, speedValue;
-        appearanceValue = ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        interiorValue = ship.interior / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        safetyValue = ship.safety / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        speedValue = ship.speed / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+        appearanceValue = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        interiorValue = (float)ship.interior / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        safetyValue = (float)ship.safety / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        speedValue = (float)ship.speed / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
 
         float maximumOffer = (appearanceValue * appearanceWeight) + (interiorValue * interiorWeight) + (safetyValue * safetyWeight) + (speedValue * speedWeight)
             * (0.003f * patience + 0.8f) * sizeWeight;
