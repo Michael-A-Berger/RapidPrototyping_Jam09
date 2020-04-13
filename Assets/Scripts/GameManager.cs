@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
 
         // Set initial value for text
         //speechBubble.text = greetings[Random.Range(0, greetings.Length)];
-        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        actionsText.text = dealerActions.ToString();
         feedbackText.text = "";
 
         // Set initail value for variables
@@ -364,7 +364,7 @@ public class GameManager : MonoBehaviour
         dealerActions = maxActions;
 
         //Reset content for textbox
-        actionsText.text = "Dealer Actions: " + dealerActions + "/5";
+        actionsText.text = dealerActions.ToString();
         feedbackText.text = "";
 
         // Play audio effect accordingly

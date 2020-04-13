@@ -50,7 +50,7 @@ public class CustomerStats : MonoBehaviour
         // Locate patience UI and initialize patience value
         patienceText = GameObject.Find("CustomerPatience").GetComponent<Text>();
         patience = 100.0f;
-        patienceText.text = "Customer Patience: " + patience + "%";
+        patienceText.text = patience.ToString();
 
         // Initialize weights
         appearanceWeight = convertRankToWeight(appearanceRank);
@@ -265,7 +265,7 @@ public class CustomerStats : MonoBehaviour
     {
         patience += changeOfPatience;
         patience = Mathf.Clamp(patience, 0.0f, 100.0f);
-        patienceText.text = "Customer Patience: " + patience + "%";
+        patienceText.text = patience.ToString();
         if (patience == 0)
         {
             manager.NoSaleResponce();
