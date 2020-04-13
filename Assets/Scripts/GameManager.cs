@@ -130,6 +130,9 @@ public class GameManager : MonoBehaviour
         dealerActions = maxActions;
         ships = new List<ShipStats>();
 
+        SpawnShips();
+        SpawnCustomer();
+
         BoastPanel.SetActive(false);
     }
 
