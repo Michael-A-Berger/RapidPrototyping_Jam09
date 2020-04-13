@@ -231,18 +231,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8392268167782910621}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &796164724 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8392268167236307177, guid: 5e3fc1d5dc3867249ba178547919ccb3,
-    type: 3}
-  m_PrefabInstance: {fileID: 8392268167782910621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 088d9a1cb0bfb8f40b4051e1496ac3cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &965065403
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,8 +306,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1511085259}
-  - component: {fileID: 1511085260}
-  - component: {fileID: 1511085258}
   m_Layer: 0
   m_Name: Test Input Object
   m_TagString: Untagged
@@ -327,184 +313,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1511085258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511085257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0c5b39a4daa3b459a82308e7a7ab2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testEvents:
-  - key: 49
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Music
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 50
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: StopAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Music
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 51
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Spaceship Sold 1
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 52
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Spaceship Sold 2
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 53
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Spaceship Sold 3
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 54
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Customer Arrives
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 55
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Customer Leaves
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 56
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Menu
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 57
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Changing Sell Price 1
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 113
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1511085260}
-          m_MethodName: Load
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: MainMenu
-            m_BoolArgument: 0
-          m_CallState: 2
-  - key: 48
-    events:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 796164724}
-          m_MethodName: PlayAudio
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Changing Sell Price 2
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!4 &1511085259
 Transform:
   m_ObjectHideFlags: 0
@@ -519,18 +327,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1511085260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511085257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50cff26b53a8bb498b678986d30b29e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1717097433
 GameObject:
   m_ObjectHideFlags: 0

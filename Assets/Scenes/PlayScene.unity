@@ -2376,7 +2376,6 @@ GameObject:
   - component: {fileID: 933623157}
   - component: {fileID: 933623156}
   - component: {fileID: 933623155}
-  - component: {fileID: 933623158}
   m_Layer: 5
   m_Name: Interview
   m_TagString: Untagged
@@ -2505,18 +2504,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933623153}
   m_CullTransparentMesh: 0
---- !u!114 &933623158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933623153}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &940624193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,7 +2516,6 @@ GameObject:
   - component: {fileID: 940624197}
   - component: {fileID: 940624196}
   - component: {fileID: 940624195}
-  - component: {fileID: 940624198}
   m_Layer: 5
   m_Name: Snacks
   m_TagString: Untagged
@@ -2658,18 +2644,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940624193}
   m_CullTransparentMesh: 0
---- !u!114 &940624198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940624193}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1009483250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3985,7 +3959,6 @@ GameObject:
   - component: {fileID: 1447693584}
   - component: {fileID: 1447693583}
   - component: {fileID: 1447693582}
-  - component: {fileID: 1447693581}
   m_Layer: 5
   m_Name: Offer
   m_TagString: Untagged
@@ -4013,18 +3986,6 @@ RectTransform:
   m_AnchoredPosition: {x: 279, y: 99}
   m_SizeDelta: {x: 320, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1447693581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447693579}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1447693582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4313,7 +4274,6 @@ GameObject:
   - component: {fileID: 1558806448}
   - component: {fileID: 1558806447}
   - component: {fileID: 1558806446}
-  - component: {fileID: 1558806445}
   m_Layer: 5
   m_Name: Boast
   m_TagString: Untagged
@@ -4341,18 +4301,6 @@ RectTransform:
   m_AnchoredPosition: {x: 279, y: -120}
   m_SizeDelta: {x: 320, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1558806445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558806443}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3295e398f297948b7d57ccea30b136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1558806446
 MonoBehaviour:
   m_ObjectHideFlags: 0
