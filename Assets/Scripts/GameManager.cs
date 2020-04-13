@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
         // Set initail value for variables
         income = 0.0f;
         netIncome = 0.0f;
-        totalShipValue = 0.0f;
+        //totalShipValue = 0.0f;
         dealerActions = maxActions;
         ships = new List<ShipStats>();
 
@@ -288,7 +288,7 @@ public class GameManager : MonoBehaviour
             spawnedShip.transform.localScale = new Vector3(spawnedShip.transform.localScale.x * 45f, spawnedShip.transform.localScale.y * 45f, 1f);
             spawnedShip.transform.SetParent(spawn.transform.parent);
 
-            totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
+            //totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
         }
 
         AddIncome(0.0f, 0.0f);
@@ -318,7 +318,7 @@ public class GameManager : MonoBehaviour
         spawnedShip.transform.localScale = new Vector3(spawnedShip.transform.localScale.x * 45f, spawnedShip.transform.localScale.y * 45f, 1f);
         spawnedShip.transform.SetParent(spawn.parent);
 
-        totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
+        //totalShipValue += spawnedShip.GetComponent<ShipStats>().value;
         //totalIncomeText.text = "/ " + totalShipValue;
     }
 
