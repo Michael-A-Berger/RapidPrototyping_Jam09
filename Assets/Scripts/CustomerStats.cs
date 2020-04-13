@@ -11,7 +11,7 @@ public class CustomerStats : MonoBehaviour
     // Start of conversation
     private string[] greetings = { "Hi there!", "Whatta ya got?", "What're ya sellin'?", "Is this the right place?", "Can I get some service, please?" };
     // Response after player use boast
-    private string[] boastResponse = { "You don't say!", "I hadn't considered that...", "I'll take your word for it.", "Impressive!", "Wow!" };
+    private string[] boastResponse = { "You don't say!", "I hadn't considered that...", "I'll take your word for it", "Impressive!", "Wow!" };
     // Response after player give snack
     private string[] snackResponse = { "Thank you!", "Thanks!", "For me? Thanks!", "Talk about customer service!", "You have my attention" };
     // Interview response for value appearance
@@ -19,7 +19,7 @@ public class CustomerStats : MonoBehaviour
     // Interview response for value interior
     private string[] interiorResponse = { "Something that looks good from the inside", "A luxury interior!", "Comfortable seats for long trips", "CUP HOLDERS", "Lots of flashing buttons!" };
     // Interview response for value safety
-    private string[] safteyResponse = { "Something that'll keep my family safe", "Got anything that can blow up a small planet?", "Guns. Lots of them. Don't ask.", "State of the art defense system", "Airbags. Wait, do you need airbags in space?" };
+    private string[] safteyResponse = { "Something that'll keep my family safe", "Got anything that can blow up a small planet?", "Guns. Lots of them. Don't ask", "State of the art defense system", "Airbags. Wait, do you need airbags in space?" };
     // Interview response for value speed
     private string[] speedResponse = { "GOTTA GO FAST", "The fastest ya got", "Speed is key!", "I want to break some speed records", "Something quick would be nice" };
     // Interview response for want smaller ship
@@ -27,13 +27,15 @@ public class CustomerStats : MonoBehaviour
     // Interview response for want regular ship
     private string[] sizeResponseRegular = { "Something not too big or too small", "Something sized juuuuuust right", "Average sized would be fine", "Got anything regular sized?", "I'm not looking for anything crazy for size" };
     // Interview response for want large ship
-    private string[] sizeResponseLarge = { "Biggest ya got!", "I need something to fit the whole family", "BIG SHIP PLEASE", "I would prefer something on the large side", "Something big enough to fit an asteroid. No reason." };
+    private string[] sizeResponseLarge = { "Biggest ya got!", "I need something to fit the whole family", "BIG SHIP PLEASE", "I would prefer something on the large side", "Something big enough to fit an asteroid. No reason" };
     // Response when price offered too cheap
     private string[] purchaseResponseCheap = { "You're practically giving it away!", "What a steal!", "How do you stay in business with such low prices?!", "Haha, sucker!", "Way less than I was expecting!" };
     // Response when price offered just about right
     private string[] purchaseResponseAverage = { "You got yourself a deal", "Sounds reasonable", "Sure, sounds fair", "A fair price", "I can do that" };
     // Response when price offered too high
     private string[] purchaseResponseExpensive = { "I can't afford that", "No way, pal", "That's way too expensive", "For that hunk of junk?! No way!", "You're out of your mind!" };
+    // Response when leaving without a sale
+    private string[] leaveNoSaleResponse = { "I have places to be", "Have your people call my people", "I'm bored, I'm busy, I'm done here", "Whatever, I don't like your selection...", "Guess I'm not flying home in a new ride" };
 
     // Customer's rank of the most important thing to them
     // Each stat is given a rank from 1 to 5 where 5 being the most important and 1 being the least important
@@ -58,12 +60,13 @@ public class CustomerStats : MonoBehaviour
     public enum CustomerModifier { None }
     public CustomerModifier modifier =  CustomerModifier.None;    
 
-    // UI used to display amount of customer patient
+    // UI used to display amount of customer patience
     private Text patienceText; 
-    // Current value for customer patience, an int between 0 and 100, indicate percent of patient left, start value is 100 for all customer
+    // Current value for customer patience, an int between 0 and 100, indicate percent of patience left, start value is 100 for all customer
     private float patience;
 
     private GameManager manager;
+    private Text feedbackText;
     private AudioManager audioMng  = null;
 
     // Start is called before the first frame update
@@ -87,6 +90,7 @@ public class CustomerStats : MonoBehaviour
         speedModifier = convertWeightToModifier(speedRank);
         sizeModifier = 1f;
 
+        feedbackText = GameObject.Find("FeedbackLine").GetComponent<Text>();
         audioMng = FindObjectOfType<AudioManager>();
         if (audioMng == null)
             Debug.LogError("\tNo GameObject with the [ AudioManager ] script was found in the current scene!");
@@ -148,7 +152,6 @@ public class CustomerStats : MonoBehaviour
     {
         speechBubble.text = boastResponse[Random.Range(0, boastResponse.Length)];
 
-        // MORE PLACEHOLDER MATH. SHOULD CHANGE BASED ON HOW MUCH THEY LIKE THE STAT
         switch (stat)
         {       
             case 1:
@@ -174,15 +177,12 @@ public class CustomerStats : MonoBehaviour
 
     public void OfferSnacks()
     {
-        // MORE PLACEHOLDER VALUES
         speechBubble.text = snackResponse[Random.Range(0, snackResponse.Length)];
-        UpdatePatience(-100.0f);
+        UpdatePatience(100.0f);
     }
 
     public void MakeOffer(float amount, ShipStats ship)
     {
-        // THIS IS ALL PLACEHOLDER MATH THAT ALL NEEDS TO BE REPLACED!!!
-
         //size modifier math
         if (sizePreference != ship.size)
         {
@@ -275,13 +275,50 @@ public class CustomerStats : MonoBehaviour
         //patience f(x)=0.003x+0.8
         //each stats has a value
         float appearanceValue, interiorValue, safetyValue, speedValue;
-        appearanceValue = ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        interiorValue = ship.interior / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        safetyValue = ship.safety / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
-        speedValue = ship.speed / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value;
+        appearanceValue = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        interiorValue = (float)ship.interior / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        safetyValue = (float)ship.safety / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        speedValue = (float)ship.speed / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
 
         float maximumOffer = (appearanceValue * appearanceModifier) + (interiorValue * interiorModifier) + (safetyValue * safetyModifier) + (speedValue * speedModifier)
             * (0.003f * patience + 0.8f) * sizeModifier;
+
+        // Round the highest price to a multiple of 100
+        int holder = (int)maximumOffer/100;
+        maximumOffer = holder * 100;
+
+        /*Debug.Log("Size preference: " + sizePreference);
+        Debug.Log("Ship size: " + ship.size);
+        Debug.Log("Ship appearance: " + ship.appearance);
+        Debug.Log("Ship interior: " + ship.interior);
+        Debug.Log("Ship safety: " + ship.safety);
+        Debug.Log("Ship speed: " + ship.speed);
+        Debug.Log("Ship value: " + ship.value);
+
+        Debug.Log("Appearance modifier: " + appearanceModifier);
+        Debug.Log("Ship appearance value: " + appearanceValue);
+        Debug.Log("Interior modifier: " + interiorModifier);
+        Debug.Log("Ship interior value: " + interiorValue);
+        Debug.Log("Safety modifier: " + safetyModifier);
+        Debug.Log("Ship safety value: " + safetyValue);
+        Debug.Log("Speed modifier: " + speedModifier);
+        Debug.Log("Ship speed value: " + speedValue);
+
+        float theAnswer = (float)ship.appearance + (float)ship.interior;
+        Debug.Log("Math in steps: ship.appearance + ship.interior = " + theAnswer);
+        theAnswer = (float)ship.appearance + (float)ship.interior + (float)ship.safety;
+        Debug.Log("ship.appearance + ship.interior + ship.safety = " + theAnswer);
+        theAnswer = (float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed;
+        Debug.Log("ship.appearance + ship.interior + ship.safety + ship.speed = " + theAnswer);
+        theAnswer = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed);
+        Debug.Log("ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) = " + theAnswer);
+        theAnswer = (float)ship.appearance / ((float)ship.appearance + (float)ship.interior + (float)ship.safety + (float)ship.speed) * (float)ship.value;
+        Debug.Log("ship.appearance / (ship.appearance + ship.interior + ship.safety + ship.speed) * ship.value = " + theAnswer);
+
+        Debug.Log("Input amount: " + amount);
+
+        Debug.Log("Perfect amount: " + maximumOffer);
+        Debug.Log("Rounded perfect amount: " + holder);*/
 
         if (amount <= maximumOffer)
         {
@@ -289,11 +326,13 @@ public class CustomerStats : MonoBehaviour
             if (amount / maximumOffer < 0.85f)
             {
                 speechBubble.text = purchaseResponseCheap[Random.Range(0, purchaseResponseCheap.Length)];
+                feedbackText.text = "Perfect Price: $" + maximumOffer;
                 StartCoroutine("SpawnNextCustomer");
             }
             else
             {
                 speechBubble.text = purchaseResponseAverage[Random.Range(0, purchaseResponseAverage.Length)];
+                feedbackText.text = "Perfect Price: $" + maximumOffer;
                 StartCoroutine("SpawnNextCustomer");
             }
         }
@@ -315,12 +354,20 @@ public class CustomerStats : MonoBehaviour
 
     private void UpdatePatience(float amount)
     {
-        // ALL CALLS TO THIS HAVE PLACEHOLDER VALUES OF -1.0 RIGHT NOW
         patience += amount;
         patience = Mathf.Clamp(patience, 0.0f, 100.0f);
         patienceText.text = "Customer Patience: " + patience + "%";
         if (patience == 0)
+        {
+            feedbackText.text = "Out of Patience";
             StartCoroutine("SpawnNextCustomer");
+        }
+    }
+
+    public void OutOfActions()
+    {
+        feedbackText.text = "Out of Actions";
+        StartCoroutine("SpawnNextCustomer");
     }
 
     private IEnumerator SpawnNextCustomer()
@@ -330,9 +377,12 @@ public class CustomerStats : MonoBehaviour
         GameObject.Find("Snacks").GetComponent<Button>().interactable = false;
         GameObject.Find("Offer").GetComponent<Button>().interactable = false;
 
+        speechBubble.text = leaveNoSaleResponse[Random.Range(0, leaveNoSaleResponse.Length)];
+
         while (true)
         {
             yield return new WaitForSeconds(2.0f);
+            manager.SpawnShips();
             manager.SpawnCustomer();
             Destroy(gameObject);
         }

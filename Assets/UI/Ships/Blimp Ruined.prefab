@@ -53,8 +53,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1740be308fe43db469860b0aaaea330c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: Blimp
-  value: 2000
+  model: Blimp (Used)
+  value: 1500
   appearance: 1
   interior: 4
   safety: 2
